@@ -1,0 +1,15 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v5
+      - name: Build
+        run: xcodebuild build -project DailyNotes.xcodeproj -scheme DailyNotes -destination 'platform=iOS Simulator,name=iPhone 17,OS=latest'
+      - name: Test
+        run: xcodebuild test -project DailyNotes.xcodeproj -scheme DailyNotes -destination 'platform=iOS Simulator,name=iPhone 17,OS=latest'
