@@ -18,11 +18,21 @@
 - Pinned CI simulator by UDID and arm64.
 - CI simulator pin validated locally.
 - Updated commands to use pinned simulator destination.
+- Added independent Weather Companion project.
+- Added iOS app, watchOS app, and WidgetKit extension.
+- Added Open-Meteo networking and JSON decoding.
+- Added async loading, loading/error state, hourly forecast, and favorites.
+- Added Weather Companion unit and UI tests.
+- Added Weather Companion CI build and test steps.
+- Weather Companion iOS tests passed.
+- Weather Companion watchOS build passed.
+- Weather Companion widget build passed.
+- Weather Companion watch app launched in simulator.
 
 ## Current
 
-- Daily Notes app complete.
+- Weather Companion complete.
 
 ## Next
 
-- Next requested project.
+- Next app.
