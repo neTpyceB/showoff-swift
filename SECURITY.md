@@ -10,8 +10,9 @@ None.
 
 ## Data
 
-Notes stay on device in UserDefaults.
+- Daily Notes stores notes on device in UserDefaults.
+- Weather Companion stores favorite places on device in UserDefaults.
 
 ## Network
 
-None.
+Weather Companion calls Open-Meteo over HTTPS.
