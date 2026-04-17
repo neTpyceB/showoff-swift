@@ -1,0 +1,32 @@
+{
+  "file_hashes": {
+    "DailyNotes/ContentView.swift": "c91c4a2f4bb0b03f2472d5c02b1c12af31bd207fefb5a558837c5ec52da6ccfc",
+    "DailyNotes/DailyNotesApp.swift": "e86d75808f4febe4265dc242a55efff5e09792721a1352b1c8b9786be5b9c98d",
+    "DailyNotes/Note.swift": "19b9cad88a5b0c50be48d0967eb81049e849ed79f4698f8a6ac2e7188f5b058d",
+    "DailyNotes/NoteEditorView.swift": "6cc0f7fd0ab7c745148d220fe9d4669a87d1e7b5e64dec48770a863aa22b0ca7",
+    "DailyNotes/NotesStore.swift": "839f64176497f7d6c76c4262f216aea996db875c1696bf5de6c3802c42e7ffa1",
+    "DailyNotesTests/NotesStoreTests.swift": "9504e49b836357c92af24a1d050818c4bb8869bd061f1bbae155b8e46ccc09c2",
+    "DailyNotesUITests/DailyNotesUITests.swift": "ffea49443657afa6f3b7da9760304495dba8c94d3eea38ab478d6e4930e93db0",
+    "WeatherCompanion/WeatherCompanionApp.swift": "e60783639d40842293617ac105231284a56ddb404f5b1c435d29b2474952f26a",
+    "WeatherCompanion/WeatherHomeView.swift": "492d23a4fce01e440a386499e3af5d9b0d8f132b812ea98f1dd855f78eb94a60",
+    "WeatherCompanionShared/FavoritePlaceStore.swift": "bc0b9f5320a8dd9129cf4bf0a623522adfb4a735c053e53a80188553d6e3127e",
+    "WeatherCompanionShared/Place.swift": "41801033efb6abb34a746375edb8d2bd421cf7a6c96e612733768de9547abcd5",
+    "WeatherCompanionShared/WeatherAPI.swift": "de3bd7e601bf2d9bb18418352a166316f089d247d818926e0d03c0c7bd747127",
+    "WeatherCompanionShared/WeatherReport.swift": "45c62a2f688489d8096ce56de392ecee6ffb602f83c48dcd11d6d98f8155a31c",
+    "WeatherCompanionShared/WeatherViewModel.swift": "9991b9a0eba7834f9dcf01a81c4e3eee7c5d0621fd4e6b9d0939371ccf5df8e9",
+    "WeatherCompanionTests/WeatherAPITests.swift": "d02f2c467e64d0791e4563832030d07276d694357ed94fb54f3502aa4ec4c991",
+    "WeatherCompanionUITests/WeatherCompanionUITests.swift": "1e031955f4c243f5fa9ee8ebdf6b173090ba283bd53eb55af3181a7cb42df5a9",
+    "WeatherCompanionWatch/WatchWeatherView.swift": "0b2fc7961302d9d293586397c5b5d75245b11aa64cbeef14d5c4dc5abacc9a5f",
+    "WeatherCompanionWatch/WeatherCompanionWatchApp.swift": "3f1484d4f87d1cd877866f99be87c29f18be51ad1d99aa7e1060559ea401f2b8",
+    "WeatherCompanionWidget/WeatherCompanionWidget.swift": "4d45f50ffebacabe9d4041188f073d2b3cab6c793309cae2ec115088e6991190"
+  },
+  "indexed_at_commit": "b97f8eb4c8c975feb6f674396efa76ae3a838f15",
+  "indexed_at_timestamp": "2026-04-17T09:19:37.247286+00:00",
+  "schema_version": 3,
+  "stats": {
+    "total_edges": 33,
+    "total_files": 19,
+    "total_nodes": 51
+  },
+  "vexp_version": "2.0.11"
+}
