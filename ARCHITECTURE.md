@@ -3,7 +3,8 @@
 ## Projects
 
 - Daily Notes: iOS only.
-- Weather Companion: iOS, watchOS, WidgetKit.
+- Habit Tracker: iOS + watchOS.
+- Weather Companion: iOS + watchOS + WidgetKit.
 
 ## Daily Notes
 
@@ -14,6 +15,20 @@
 - `Note`: note model.
 
 Notes are stored locally in `UserDefaults` as JSON.
+
+## Habit Tracker
+
+- `HabitTrackerApp`: iOS app entry point.
+- `HabitListView`: habit list, progress, completion.
+- `AddHabitView`: habit creation form.
+- `ReminderScheduler`: local notification scheduling.
+- `HabitTrackerWatchApp`: watchOS app entry point.
+- `WatchHabitListView`: watch completion UI.
+- `HabitStore`: UserDefaults persistence.
+- `HabitSync`: shared UserDefaults app group sync.
+- `Habit`: shared model.
+
+Habits are stored locally and mirrored through app-group UserDefaults.
 
 ## Weather Companion
 

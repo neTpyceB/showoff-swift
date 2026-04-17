@@ -11,8 +11,13 @@ None.
 ## Data
 
 - Daily Notes stores notes on device in UserDefaults.
+- Habit Tracker stores habits on device and app-group UserDefaults.
 - Weather Companion stores favorite places on device in UserDefaults.
 
 ## Network
 
 Weather Companion calls Open-Meteo over HTTPS.
+
+## Notifications
+
+Habit Tracker schedules local notifications only after user permission.

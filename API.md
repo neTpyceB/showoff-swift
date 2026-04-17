@@ -8,6 +8,16 @@ Local operations:
 - Edit note.
 - Delete note.
 
+## Habit Tracker
+
+Local operations:
+
+- Create habit.
+- Delete habit.
+- Mark habit done.
+- Schedule local reminder.
+- Sync habits to watch through app-group UserDefaults.
+
 ## Weather Companion
 
 External API:
