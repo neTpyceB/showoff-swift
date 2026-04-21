@@ -5,6 +5,7 @@
 - Daily Notes: iOS only.
 - Habit Tracker: iOS + watchOS.
 - Weather Companion: iOS + watchOS + WidgetKit.
+- Movie / Series Browser: iOS + tvOS.
 
 ## Daily Notes
 
@@ -41,3 +42,15 @@ Habits are stored locally and mirrored through app-group UserDefaults.
 - `WeatherViewModel`: async loading state.
 - `FavoritePlaceStore`: UserDefaults favorite places.
 - `Place`, `WeatherReport`, `HourlyForecast`: shared models.
+
+## Movie / Series Browser
+
+- `MovieSeriesBrowserApp`: iOS app entry point.
+- `MovieCatalogView`: iOS catalog and search UI.
+- `MediaDetailView`: iOS media details and trailer player.
+- `PosterImageView`: iOS poster loader with in-memory cache.
+- `MovieSeriesBrowserTVApp`: tvOS app entry point.
+- `TVMediaCatalogView`: tvOS catalog grid, focus navigation, and trailer details.
+- `CatalogService`: shared movie/series catalog source.
+- `CatalogViewModel`: shared catalog filtering and featured state.
+- `MediaItem`, `MediaKind`: shared media model.

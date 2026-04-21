@@ -31,3 +31,17 @@ Local operations:
 - Delete favorite place.
 - Load current weather.
 - Load hourly forecast.
+
+## Movie / Series Browser
+
+External resources:
+
+- Posters: `https://picsum.photos`
+- Trailer media: `https://commondatastorage.googleapis.com`
+
+Local operations:
+
+- Load shared movie/series catalog.
+- Search catalog by title/type.
+- Open media detail.
+- Play trailer in app.
