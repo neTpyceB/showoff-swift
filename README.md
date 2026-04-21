@@ -7,12 +7,14 @@ Independent Apple app projects.
 - Xcode 26.4.1
 - iOS Simulator 26.4
 - watchOS Simulator 26.4
+- tvOS Simulator 26.4
 
 ## Apps
 
 - `DailyNotes.xcodeproj`: iOS notes app.
 - `HabitTracker.xcodeproj`: iOS + watchOS habit tracker.
 - `WeatherCompanion.xcodeproj`: iOS + watchOS + WidgetKit weather app.
+- `MovieSeriesBrowser.xcodeproj`: iOS + tvOS movie and series browser.
 
 ## Daily Notes
 
@@ -43,4 +45,15 @@ SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices 
 WATCH_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("watchOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple Watch Series 11 (46mm)" }.fetch("udid")')
 xcodebuild test -project WeatherCompanion.xcodeproj -scheme WeatherCompanion -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
 xcodebuild build -project WeatherCompanion.xcodeproj -scheme WeatherCompanionWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"
+```
+
+## Movie / Series Browser
+
+Open `MovieSeriesBrowser.xcodeproj` in Xcode. Run `MovieSeriesBrowser` on iPhone and `MovieSeriesBrowserTV` on Apple TV.
+
+```sh
+SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')
+TV_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("tvOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple TV 4K (3rd generation)" }.fetch("udid")')
+xcodebuild test -project MovieSeriesBrowser.xcodeproj -scheme MovieSeriesBrowser -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
+xcodebuild build -project MovieSeriesBrowser.xcodeproj -scheme MovieSeriesBrowserTV -destination "platform=tvOS Simulator,id=$TV_SIMULATOR_ID,arch=arm64"
 ```

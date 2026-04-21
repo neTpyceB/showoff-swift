@@ -22,6 +22,11 @@
 - Launched Habit Tracker watch app in simulator.
 - Updated CI.
 - Updated docs.
+- Added independent Movie / Series Browser project.
+- Added shared movie/series catalog logic for iOS + tvOS.
+- Added iOS and tvOS media browsing, search, focus navigation, and trailer playback.
+- Added Movie / Series Browser unit and UI tests.
+- Updated CI and docs for Movie / Series Browser.
 
 ## Current
 
@@ -29,4 +34,4 @@
 
 ## Next
 
-- Next app.
+- Add project 5.

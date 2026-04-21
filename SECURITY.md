@@ -16,7 +16,8 @@ None.
 
 ## Network
 
-Weather Companion calls Open-Meteo over HTTPS.
+- Weather Companion calls Open-Meteo over HTTPS.
+- Movie / Series Browser loads poster and trailer media over HTTPS.
 
 ## Notifications
 

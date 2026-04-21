@@ -16,6 +16,7 @@
 - Daily Notes is an iOS-only SwiftUI app.
 - Habit Tracker is an iOS + watchOS SwiftUI app.
 - Weather Companion is an iOS + watchOS + WidgetKit SwiftUI app.
+- Movie / Series Browser is an iOS + tvOS SwiftUI app.
 
 
 ## vexp <!-- vexp v2.0.11 -->
