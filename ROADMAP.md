@@ -27,11 +27,16 @@
 - Added iOS and tvOS media browsing, search, focus navigation, and trailer playback.
 - Added Movie / Series Browser unit and UI tests.
 - Updated CI and docs for Movie / Series Browser.
+- Added independent Personal Fitness Dashboard project.
+- Added Personal Fitness Dashboard iOS and watchOS apps.
+- Added permission-based data flow, workout logging, activity summaries, trends, and reminders.
+- Added Personal Fitness Dashboard unit and UI tests.
+- Updated CI and docs for Personal Fitness Dashboard.
 
 ## Current
 
-- Main contains all apps.
+- Main branch contains all projects.
 
 ## Next
 
-- Add project 5.
+- Implement project 6.

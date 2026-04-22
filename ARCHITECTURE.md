@@ -6,6 +6,7 @@
 - Habit Tracker: iOS + watchOS.
 - Weather Companion: iOS + watchOS + WidgetKit.
 - Movie / Series Browser: iOS + tvOS.
+- Personal Fitness Dashboard: iOS + watchOS.
 
 ## Daily Notes
 
@@ -54,3 +55,15 @@ Habits are stored locally and mirrored through app-group UserDefaults.
 - `CatalogService`: shared movie/series catalog source.
 - `CatalogViewModel`: shared catalog filtering and featured state.
 - `MediaItem`, `MediaKind`: shared media model.
+
+## Personal Fitness Dashboard
+
+- `FitnessDashboardApp`: iOS app entry point and lifecycle/background refresh hooks.
+- `FitnessDashboardView`: iOS dashboard for summaries, trends, workouts, and reminders.
+- `AddWorkoutView`: workout creation form.
+- `FitnessReminderScheduler`: local reminder scheduling.
+- `FitnessDashboardWatchApp`: watchOS app entry point and lifecycle hooks.
+- `WatchFitnessDashboardView`: watch quick summary, trend, and quick logging actions.
+- `FitnessStore`: shared permission-aware state, persistence, summaries, and trends.
+- `FitnessPermissionManager`: shared local permission state persistence.
+- `WorkoutType`, `Workout`, `ActivitySummary`, `TrendPoint`: shared models.

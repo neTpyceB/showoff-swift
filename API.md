@@ -45,3 +45,13 @@ Local operations:
 - Search catalog by title/type.
 - Open media detail.
 - Play trailer in app.
+
+## Personal Fitness Dashboard
+
+Local operations:
+
+- Grant or deny local activity permission state.
+- Add workout entry.
+- Delete workout entry.
+- Recompute activity summary and 7-day trend.
+- Schedule local reminder.
