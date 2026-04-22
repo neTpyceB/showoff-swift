@@ -17,6 +17,7 @@
 - Habit Tracker is an iOS + watchOS SwiftUI app.
 - Weather Companion is an iOS + watchOS + WidgetKit SwiftUI app.
 - Movie / Series Browser is an iOS + tvOS SwiftUI app.
+- Personal Fitness Dashboard is an iOS + watchOS SwiftUI app.
 
 
 ## vexp <!-- vexp v2.0.11 -->

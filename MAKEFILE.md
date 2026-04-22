@@ -55,3 +55,17 @@ xcodebuild test -project MovieSeriesBrowser.xcodeproj -scheme MovieSeriesBrowser
 TV_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("tvOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple TV 4K (3rd generation)" }.fetch("udid")')
 xcodebuild build -project MovieSeriesBrowser.xcodeproj -scheme MovieSeriesBrowserTV -destination "platform=tvOS Simulator,id=$TV_SIMULATOR_ID,arch=arm64"
 ```
+
+## Personal Fitness Dashboard Test
+
+```sh
+SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')
+xcodebuild test -project FitnessDashboard.xcodeproj -scheme FitnessDashboard -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
+```
+
+## Personal Fitness Dashboard watchOS Build
+
+```sh
+WATCH_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("watchOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple Watch Series 11 (46mm)" }.fetch("udid")')
+xcodebuild build -project FitnessDashboard.xcodeproj -scheme FitnessDashboardWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"
+```

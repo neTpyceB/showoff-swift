@@ -46,3 +46,9 @@ jobs:
         run: xcodebuild test -project MovieSeriesBrowser.xcodeproj -scheme MovieSeriesBrowser -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
       - name: Build Movie Series Browser TV
         run: xcodebuild build -project MovieSeriesBrowser.xcodeproj -scheme MovieSeriesBrowserTV -destination "platform=tvOS Simulator,id=$TV_SIMULATOR_ID,arch=arm64"
+      - name: Build Fitness Dashboard
+        run: xcodebuild build -project FitnessDashboard.xcodeproj -scheme FitnessDashboard -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64"
+      - name: Test Fitness Dashboard
+        run: xcodebuild test -project FitnessDashboard.xcodeproj -scheme FitnessDashboard -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
+      - name: Build Fitness Dashboard Watch
+        run: xcodebuild build -project FitnessDashboard.xcodeproj -scheme FitnessDashboardWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"
