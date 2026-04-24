@@ -55,3 +55,15 @@ Local operations:
 - Delete workout entry.
 - Recompute activity summary and 7-day trend.
 - Schedule local reminder.
+
+## Smart Home Control App
+
+Local operations:
+
+- Load and persist smart home state.
+- Group devices by room.
+- Toggle light and camera power.
+- Set light brightness.
+- Set thermostat target temperature.
+- Activate scenes (`relax`, `movie`, `away`).
+- Apply realtime state tick updates.

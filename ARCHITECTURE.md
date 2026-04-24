@@ -7,6 +7,7 @@
 - Weather Companion: iOS + watchOS + WidgetKit.
 - Movie / Series Browser: iOS + tvOS.
 - Personal Fitness Dashboard: iOS + watchOS.
+- Smart Home Control App: iOS + watchOS + tvOS.
 
 ## Daily Notes
 
@@ -67,3 +68,16 @@ Habits are stored locally and mirrored through app-group UserDefaults.
 - `FitnessStore`: shared permission-aware state, persistence, summaries, and trends.
 - `FitnessPermissionManager`: shared local permission state persistence.
 - `WorkoutType`, `Workout`, `ActivitySummary`, `TrendPoint`: shared models.
+
+## Smart Home Control App
+
+- `SmartHomeControlApp`: iOS app entry point and lifecycle realtime hooks.
+- `SmartHomeDashboardView`: iOS room dashboard with grouped controls and scene actions.
+- `SmartHomeControlWatchApp`: watchOS app entry point.
+- `WatchSmartHomeView`: watch summary and quick room/scene commands.
+- `SmartHomeControlTVApp`: tvOS app entry point.
+- `TVSmartHomeView`: tvOS room dashboard grid and command tiles.
+- `SmartHomeStore`: shared realtime state, persistence, and command orchestration.
+- `SmartHomeCommandCenter`: command/action executor and scene application logic.
+- `SmartHomeSync`: shared state persistence.
+- `SmartRoom`, `SmartDevice`, `SmartHomeState`, `SmartScene`, `SmartHomeCommand`: shared domain model.

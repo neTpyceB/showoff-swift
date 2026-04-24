@@ -32,6 +32,11 @@
 - Added permission-based data flow, workout logging, activity summaries, trends, and reminders.
 - Added Personal Fitness Dashboard unit and UI tests.
 - Updated CI and docs for Personal Fitness Dashboard.
+- Added independent Smart Home Control App project.
+- Added Smart Home Control App for iOS, watchOS, and tvOS.
+- Added shared command/action architecture, room grouping, state sync, and realtime updates.
+- Added Smart Home Control App unit and UI tests.
+- Updated CI and docs for Smart Home Control App.
 
 ## Current
 
@@ -39,4 +44,4 @@
 
 ## Next
 
-- Implement project 6.
+- Implement project 7.
