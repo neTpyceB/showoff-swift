@@ -1,0 +1,182 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C30000000000000000000001 /* SmartHomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000031 /* SmartHomeModels.swift */; };
+		C30000000000000000000002 /* SmartHomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000032 /* SmartHomeState.swift */; };
+		C30000000000000000000003 /* SmartHomeCommandCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000033 /* SmartHomeCommandCenter.swift */; };
+		C30000000000000000000004 /* SmartHomeSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000034 /* SmartHomeSync.swift */; };
+		C30000000000000000000005 /* SmartHomeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000035 /* SmartHomeStore.swift */; };
+		C30000000000000000000006 /* SmartHomeControlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000036 /* SmartHomeControlApp.swift */; };
+		C30000000000000000000007 /* SmartHomeDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000037 /* SmartHomeDashboardView.swift */; };
+		C30000000000000000000008 /* SmartHomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000031 /* SmartHomeModels.swift */; };
+		C30000000000000000000009 /* SmartHomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000032 /* SmartHomeState.swift */; };
+		C30000000000000000000010 /* SmartHomeCommandCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000033 /* SmartHomeCommandCenter.swift */; };
+		C30000000000000000000011 /* SmartHomeSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000034 /* SmartHomeSync.swift */; };
+		C30000000000000000000012 /* SmartHomeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000035 /* SmartHomeStore.swift */; };
+		C30000000000000000000013 /* SmartHomeControlWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000038 /* SmartHomeControlWatchApp.swift */; };
+		C30000000000000000000014 /* WatchSmartHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000039 /* WatchSmartHomeView.swift */; };
+		C30000000000000000000015 /* SmartHomeModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000031 /* SmartHomeModels.swift */; };
+		C30000000000000000000016 /* SmartHomeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000032 /* SmartHomeState.swift */; };
+		C30000000000000000000017 /* SmartHomeCommandCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000033 /* SmartHomeCommandCenter.swift */; };
+		C30000000000000000000018 /* SmartHomeControlTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000040 /* SmartHomeControlTVApp.swift */; };
+		C30000000000000000000019 /* SmartHomeStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000041 /* SmartHomeStoreTests.swift */; };
+		C30000000000000000000020 /* SmartHomeControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000042 /* SmartHomeControlUITests.swift */; };
+		C30000000000000000000022 /* SmartHomeSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000034 /* SmartHomeSync.swift */; };
+		C30000000000000000000023 /* SmartHomeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000035 /* SmartHomeStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C30000000000000000000051 /* PBXContainerItemProxy */ = {isa = PBXContainerItemProxy; containerPortal = C30000000000000000000071 /* Project object */; proxyType = 1; remoteGlobalIDString = C30000000000000000000081; remoteInfo = SmartHomeControl; };
+		C30000000000000000000052 /* PBXContainerItemProxy */ = {isa = PBXContainerItemProxy; containerPortal = C30000000000000000000071 /* Project object */; proxyType = 1; remoteGlobalIDString = C30000000000000000000081; remoteInfo = SmartHomeControl; };
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C30000000000000000000031 /* SmartHomeModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeModels.swift; sourceTree = "<group>"; };
+		C30000000000000000000032 /* SmartHomeState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeState.swift; sourceTree = "<group>"; };
+		C30000000000000000000033 /* SmartHomeCommandCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeCommandCenter.swift; sourceTree = "<group>"; };
+		C30000000000000000000034 /* SmartHomeSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeSync.swift; sourceTree = "<group>"; };
+		C30000000000000000000035 /* SmartHomeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeStore.swift; sourceTree = "<group>"; };
+		C30000000000000000000036 /* SmartHomeControlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeControlApp.swift; sourceTree = "<group>"; };
+		C30000000000000000000037 /* SmartHomeDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeDashboardView.swift; sourceTree = "<group>"; };
+		C30000000000000000000038 /* SmartHomeControlWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeControlWatchApp.swift; sourceTree = "<group>"; };
+		C30000000000000000000039 /* WatchSmartHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSmartHomeView.swift; sourceTree = "<group>"; };
+		C30000000000000000000040 /* SmartHomeControlTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeControlTVApp.swift; sourceTree = "<group>"; };
+		C30000000000000000000041 /* SmartHomeStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeStoreTests.swift; sourceTree = "<group>"; };
+		C30000000000000000000042 /* SmartHomeControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartHomeControlUITests.swift; sourceTree = "<group>"; };
+		C30000000000000000000043 /* SmartHomeControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30000000000000000000044 /* SmartHomeControlWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeControlWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30000000000000000000045 /* SmartHomeControlTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeControlTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30000000000000000000046 /* SmartHomeControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHomeControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30000000000000000000047 /* SmartHomeControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartHomeControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C30000000000000000000091 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C30000000000000000000092 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C30000000000000000000093 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C30000000000000000000094 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C30000000000000000000095 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C30000000000000000000061 = {
+			isa = PBXGroup;
+			children = (
+				C30000000000000000000062 /* SmartHomeControlShared */,
+				C30000000000000000000063 /* SmartHomeControl */,
+				C30000000000000000000064 /* SmartHomeControlWatch */,
+				C30000000000000000000065 /* SmartHomeControlTV */,
+				C30000000000000000000066 /* SmartHomeControlTests */,
+				C30000000000000000000067 /* SmartHomeControlUITests */,
+				C30000000000000000000068 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C30000000000000000000062 /* SmartHomeControlShared */ = {isa = PBXGroup; children = (C30000000000000000000031, C30000000000000000000032, C30000000000000000000033, C30000000000000000000034, C30000000000000000000035); path = SmartHomeControlShared; sourceTree = "<group>"; };
+		C30000000000000000000063 /* SmartHomeControl */ = {isa = PBXGroup; children = (C30000000000000000000036, C30000000000000000000037); path = SmartHomeControl; sourceTree = "<group>"; };
+		C30000000000000000000064 /* SmartHomeControlWatch */ = {isa = PBXGroup; children = (C30000000000000000000038, C30000000000000000000039); path = SmartHomeControlWatch; sourceTree = "<group>"; };
+		C30000000000000000000065 /* SmartHomeControlTV */ = {isa = PBXGroup; children = (C30000000000000000000040); path = SmartHomeControlTV; sourceTree = "<group>"; };
+		C30000000000000000000066 /* SmartHomeControlTests */ = {isa = PBXGroup; children = (C30000000000000000000041); path = SmartHomeControlTests; sourceTree = "<group>"; };
+		C30000000000000000000067 /* SmartHomeControlUITests */ = {isa = PBXGroup; children = (C30000000000000000000042); path = SmartHomeControlUITests; sourceTree = "<group>"; };
+		C30000000000000000000068 /* Products */ = {isa = PBXGroup; children = (C30000000000000000000043, C30000000000000000000044, C30000000000000000000045, C30000000000000000000046, C30000000000000000000047); name = Products; sourceTree = "<group>"; };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C30000000000000000000081 /* SmartHomeControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30000000000000000000201 /* Build configuration list for PBXNativeTarget "SmartHomeControl" */;
+			buildPhases = (C30000000000000000000101 /* Sources */, C30000000000000000000091 /* Frameworks */, C30000000000000000000102 /* Resources */);
+			buildRules = ();
+			dependencies = ();
+			name = SmartHomeControl;
+			productName = SmartHomeControl;
+			productReference = C30000000000000000000043 /* SmartHomeControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C30000000000000000000082 /* SmartHomeControlWatch */ = {isa = PBXNativeTarget; buildConfigurationList = C30000000000000000000202; buildPhases = (C30000000000000000000104, C30000000000000000000092, C30000000000000000000105); buildRules = (); dependencies = (); name = SmartHomeControlWatch; productName = SmartHomeControlWatch; productReference = C30000000000000000000044; productType = "com.apple.product-type.application"; };
+		C30000000000000000000083 /* SmartHomeControlTV */ = {isa = PBXNativeTarget; buildConfigurationList = C30000000000000000000203; buildPhases = (C30000000000000000000106, C30000000000000000000093, C30000000000000000000107); buildRules = (); dependencies = (); name = SmartHomeControlTV; productName = SmartHomeControlTV; productReference = C30000000000000000000045; productType = "com.apple.product-type.application"; };
+		C30000000000000000000084 /* SmartHomeControlTests */ = {isa = PBXNativeTarget; buildConfigurationList = C30000000000000000000204; buildPhases = (C30000000000000000000108, C30000000000000000000094, C30000000000000000000109); buildRules = (); dependencies = (C30000000000000000000055); name = SmartHomeControlTests; productName = SmartHomeControlTests; productReference = C30000000000000000000046; productType = "com.apple.product-type.bundle.unit-test"; };
+		C30000000000000000000085 /* SmartHomeControlUITests */ = {isa = PBXNativeTarget; buildConfigurationList = C30000000000000000000205; buildPhases = (C30000000000000000000110, C30000000000000000000095, C30000000000000000000111); buildRules = (); dependencies = (C30000000000000000000056); name = SmartHomeControlUITests; productName = SmartHomeControlUITests; productReference = C30000000000000000000047; productType = "com.apple.product-type.bundle.ui-testing"; };
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C30000000000000000000071 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					C30000000000000000000081 = {CreatedOnToolsVersion = 26.4;};
+					C30000000000000000000082 = {CreatedOnToolsVersion = 26.4;};
+					C30000000000000000000083 = {CreatedOnToolsVersion = 26.4;};
+					C30000000000000000000084 = {CreatedOnToolsVersion = 26.4; TestTargetID = C30000000000000000000081;};
+					C30000000000000000000085 = {CreatedOnToolsVersion = 26.4; TestTargetID = C30000000000000000000081;};
+				};
+			};
+			buildConfigurationList = C30000000000000000000200;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = C30000000000000000000061;
+			productRefGroup = C30000000000000000000068;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (C30000000000000000000081, C30000000000000000000082, C30000000000000000000083, C30000000000000000000084, C30000000000000000000085);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C30000000000000000000102 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C30000000000000000000105 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C30000000000000000000107 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C30000000000000000000109 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		C30000000000000000000111 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C30000000000000000000101 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (C30000000000000000000001, C30000000000000000000002, C30000000000000000000003, C30000000000000000000004, C30000000000000000000005, C30000000000000000000006, C30000000000000000000007); runOnlyForDeploymentPostprocessing = 0; };
+		C30000000000000000000104 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (C30000000000000000000008, C30000000000000000000009, C30000000000000000000010, C30000000000000000000011, C30000000000000000000012, C30000000000000000000013, C30000000000000000000014); runOnlyForDeploymentPostprocessing = 0; };
+		C30000000000000000000106 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (C30000000000000000000015, C30000000000000000000016, C30000000000000000000017, C30000000000000000000022, C30000000000000000000023, C30000000000000000000018); runOnlyForDeploymentPostprocessing = 0; };
+		C30000000000000000000108 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (C30000000000000000000019); runOnlyForDeploymentPostprocessing = 0; };
+		C30000000000000000000110 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (C30000000000000000000020); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C30000000000000000000055 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = C30000000000000000000081; targetProxy = C30000000000000000000051; };
+		C30000000000000000000056 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = C30000000000000000000081; targetProxy = C30000000000000000000052; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C30000000000000000000121 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ANALYZER_NONNULL = YES; CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE; CLANG_CXX_LANGUAGE_STANDARD = "gnu++20"; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; CLANG_ENABLE_OBJC_WEAK = YES; CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES; CLANG_WARN_BOOL_CONVERSION = YES; CLANG_WARN_COMMA = YES; CLANG_WARN_CONSTANT_CONVERSION = YES; CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES; CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR; CLANG_WARN_DOCUMENTATION_COMMENTS = YES; CLANG_WARN_EMPTY_BODY = YES; CLANG_WARN_ENUM_CONVERSION = YES; CLANG_WARN_INFINITE_RECURSION = YES; CLANG_WARN_INT_CONVERSION = YES; CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES; CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES; CLANG_WARN_OBJC_LITERAL_CONVERSION = YES; CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR; CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES; CLANG_WARN_RANGE_LOOP_ANALYSIS = YES; CLANG_WARN_STRICT_PROTOTYPES = YES; CLANG_WARN_SUSPICIOUS_MOVE = YES; CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE; CLANG_WARN_UNREACHABLE_CODE = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = dwarf; ENABLE_STRICT_OBJC_MSGSEND = YES; ENABLE_TESTABILITY = YES; GCC_C_LANGUAGE_STANDARD = gnu17; GCC_DYNAMIC_NO_PIC = NO; GCC_NO_COMMON_BLOCKS = YES; GCC_OPTIMIZATION_LEVEL = 0; GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)"); GCC_WARN_64_TO_32_BIT_CONVERSION = YES; GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR; GCC_WARN_UNDECLARED_SELECTOR = YES; GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE; GCC_WARN_UNUSED_FUNCTION = YES; GCC_WARN_UNUSED_VARIABLE = YES; MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE; MTL_FAST_MATH = YES; ONLY_ACTIVE_ARCH = YES; SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG; }; name = Debug; };
+		C30000000000000000000122 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ANALYZER_NONNULL = YES; CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE; CLANG_CXX_LANGUAGE_STANDARD = "gnu++20"; CLANG_ENABLE_MODULES = YES; CLANG_ENABLE_OBJC_ARC = YES; CLANG_ENABLE_OBJC_WEAK = YES; CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES; CLANG_WARN_BOOL_CONVERSION = YES; CLANG_WARN_COMMA = YES; CLANG_WARN_CONSTANT_CONVERSION = YES; CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES; CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR; CLANG_WARN_DOCUMENTATION_COMMENTS = YES; CLANG_WARN_EMPTY_BODY = YES; CLANG_WARN_ENUM_CONVERSION = YES; CLANG_WARN_INFINITE_RECURSION = YES; CLANG_WARN_INT_CONVERSION = YES; CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES; CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES; CLANG_WARN_OBJC_LITERAL_CONVERSION = YES; CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR; CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES; CLANG_WARN_RANGE_LOOP_ANALYSIS = YES; CLANG_WARN_STRICT_PROTOTYPES = YES; CLANG_WARN_SUSPICIOUS_MOVE = YES; CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE; CLANG_WARN_UNREACHABLE_CODE = YES; COPY_PHASE_STRIP = NO; DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym"; ENABLE_NS_ASSERTIONS = NO; ENABLE_STRICT_OBJC_MSGSEND = YES; GCC_C_LANGUAGE_STANDARD = gnu17; GCC_NO_COMMON_BLOCKS = YES; GCC_WARN_64_TO_32_BIT_CONVERSION = YES; GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR; GCC_WARN_UNDECLARED_SELECTOR = YES; GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE; GCC_WARN_UNUSED_FUNCTION = YES; GCC_WARN_UNUSED_VARIABLE = YES; MTL_ENABLE_DEBUG_INFO = NO; MTL_FAST_MATH = YES; SWIFT_COMPILATION_MODE = wholemodule; VALIDATE_PRODUCT = YES; }; name = Release; };
+		C30000000000000000000131 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_APPINTENTS_METADATA_GENERATION = NO; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "Smart Home"; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"; IPHONEOS_DEPLOYMENT_TARGET = 26.4; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.showoff.SmartHomeControl; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 1; }; name = Debug; };
+		C30000000000000000000132 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_APPINTENTS_METADATA_GENERATION = NO; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "Smart Home"; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"; IPHONEOS_DEPLOYMENT_TARGET = 26.4; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.showoff.SmartHomeControl; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphoneos iphonesimulator"; SUPPORTS_MACCATALYST = NO; SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 1; }; name = Release; };
+		C30000000000000000000141 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_APPINTENTS_METADATA_GENERATION = NO; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "Smart Home"; INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown"; INFOPLIST_KEY_WKApplication = YES; INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.showoff.SmartHomeControl; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.showoff.SmartHomeControl.watchkitapp; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = watchos; SKIP_INSTALL = YES; SUPPORTED_PLATFORMS = "watchos watchsimulator"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 26.4; }; name = Debug; };
+		C30000000000000000000142 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_APPINTENTS_METADATA_GENERATION = NO; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "Smart Home"; INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown"; INFOPLIST_KEY_WKApplication = YES; INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.showoff.SmartHomeControl; LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks"; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.showoff.SmartHomeControl.watchkitapp; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = watchos; SKIP_INSTALL = YES; SUPPORTED_PLATFORMS = "watchos watchsimulator"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 4; WATCHOS_DEPLOYMENT_TARGET = 26.4; }; name = Release; };
+		C30000000000000000000151 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_APPINTENTS_METADATA_GENERATION = NO; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "Smart Home TV"; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.showoff.SmartHomeControlTV; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = appletvos; SUPPORTED_PLATFORMS = "appletvos appletvsimulator"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 3; TVOS_DEPLOYMENT_TARGET = 26.4; }; name = Debug; };
+		C30000000000000000000152 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; ENABLE_APPINTENTS_METADATA_GENERATION = NO; ENABLE_PREVIEWS = YES; GENERATE_INFOPLIST_FILE = YES; INFOPLIST_KEY_CFBundleDisplayName = "Smart Home TV"; INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES; INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES; INFOPLIST_KEY_UILaunchScreen_Generation = YES; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.showoff.SmartHomeControlTV; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = appletvos; SUPPORTED_PLATFORMS = "appletvos appletvsimulator"; SWIFT_EMIT_LOC_STRINGS = YES; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 3; TVOS_DEPLOYMENT_TARGET = 26.4; }; name = Release; };
+		C30000000000000000000161 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 26.4; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.showoff.SmartHomeControlTests; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphonesimulator iphoneos"; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 1; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartHomeControl.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartHomeControl"; }; name = Debug; };
+		C30000000000000000000162 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {BUNDLE_LOADER = "$(TEST_HOST)"; CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 26.4; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.showoff.SmartHomeControlTests; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphonesimulator iphoneos"; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 1; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartHomeControl.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SmartHomeControl"; }; name = Release; };
+		C30000000000000000000171 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 26.4; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.showoff.SmartHomeControlUITests; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphonesimulator iphoneos"; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 1; TEST_TARGET_NAME = SmartHomeControl; }; name = Debug; };
+		C30000000000000000000172 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CODE_SIGN_STYLE = Automatic; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = YES; IPHONEOS_DEPLOYMENT_TARGET = 26.4; MARKETING_VERSION = 1.0; PRODUCT_BUNDLE_IDENTIFIER = com.showoff.SmartHomeControlUITests; PRODUCT_NAME = "$(TARGET_NAME)"; SDKROOT = iphoneos; SUPPORTED_PLATFORMS = "iphonesimulator iphoneos"; SWIFT_VERSION = 6.0; TARGETED_DEVICE_FAMILY = 1; TEST_TARGET_NAME = SmartHomeControl; }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C30000000000000000000200 /* Build configuration list for PBXProject "SmartHomeControl" */ = {isa = XCConfigurationList; buildConfigurations = (C30000000000000000000121, C30000000000000000000122); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		C30000000000000000000201 /* Build configuration list for PBXNativeTarget "SmartHomeControl" */ = {isa = XCConfigurationList; buildConfigurations = (C30000000000000000000131, C30000000000000000000132); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		C30000000000000000000202 /* Build configuration list for PBXNativeTarget "SmartHomeControlWatch" */ = {isa = XCConfigurationList; buildConfigurations = (C30000000000000000000141, C30000000000000000000142); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		C30000000000000000000203 /* Build configuration list for PBXNativeTarget "SmartHomeControlTV" */ = {isa = XCConfigurationList; buildConfigurations = (C30000000000000000000151, C30000000000000000000152); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		C30000000000000000000204 /* Build configuration list for PBXNativeTarget "SmartHomeControlTests" */ = {isa = XCConfigurationList; buildConfigurations = (C30000000000000000000161, C30000000000000000000162); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		C30000000000000000000205 /* Build configuration list for PBXNativeTarget "SmartHomeControlUITests" */ = {isa = XCConfigurationList; buildConfigurations = (C30000000000000000000171, C30000000000000000000172); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = C30000000000000000000071 /* Project object */;
+}
