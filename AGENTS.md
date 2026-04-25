@@ -19,6 +19,7 @@
 - Movie / Series Browser is an iOS + tvOS SwiftUI app.
 - Personal Fitness Dashboard is an iOS + watchOS SwiftUI app.
 - Smart Home Control App is an iOS + watchOS + tvOS SwiftUI app.
+- Offline-first Field Service App is an iOS + watchOS SwiftUI app.
 
 
 ## vexp <!-- vexp v2.0.11 -->

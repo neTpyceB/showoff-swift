@@ -15,12 +15,14 @@ None.
 - Weather Companion stores favorite places on device in UserDefaults.
 - Personal Fitness Dashboard stores workouts and permission state on device in UserDefaults.
 - Smart Home Control App stores room/device state on device in UserDefaults.
+- Offline-first Field Service App stores jobs, pending sync mutations, and remote snapshot simulation in UserDefaults.
 
 ## Network
 
 - Weather Companion calls Open-Meteo over HTTPS.
 - Movie / Series Browser loads poster and trailer media over HTTPS.
 - Smart Home Control App has no external network calls.
+- Offline-first Field Service App has no external network calls.
 
 ## Notifications
 
