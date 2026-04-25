@@ -37,6 +37,11 @@
 - Added shared command/action architecture, room grouping, state sync, and realtime updates.
 - Added Smart Home Control App unit and UI tests.
 - Updated CI and docs for Smart Home Control App.
+- Added independent Offline-first Field Service App project.
+- Added Offline-first Field Service App for iOS and watchOS.
+- Added local database, offline mutation queue, sync engine, conflict resolution, and recovery flow.
+- Added Offline-first Field Service App unit and UI tests.
+- Updated CI and docs for Offline-first Field Service App.
 
 ## Current
 
@@ -44,4 +49,4 @@
 
 ## Next
 
-- Implement project 7.
+- Implement project 8.

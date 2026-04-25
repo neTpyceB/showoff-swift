@@ -90,3 +90,17 @@ xcodebuild build -project SmartHomeControl.xcodeproj -scheme SmartHomeControlWat
 TV_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("tvOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple TV 4K (3rd generation)" }.fetch("udid")')
 xcodebuild build -project SmartHomeControl.xcodeproj -scheme SmartHomeControlTV -destination "platform=tvOS Simulator,id=$TV_SIMULATOR_ID,arch=arm64"
 ```
+
+## Offline-first Field Service App Test
+
+```sh
+SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')
+xcodebuild test -project FieldServiceApp.xcodeproj -scheme FieldServiceApp -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
+```
+
+## Offline-first Field Service App watchOS Build
+
+```sh
+WATCH_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("watchOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple Watch Series 11 (46mm)" }.fetch("udid")')
+xcodebuild build -project FieldServiceApp.xcodeproj -scheme FieldServiceAppWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"
+```

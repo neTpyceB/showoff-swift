@@ -8,6 +8,7 @@
 - Movie / Series Browser: iOS + tvOS.
 - Personal Fitness Dashboard: iOS + watchOS.
 - Smart Home Control App: iOS + watchOS + tvOS.
+- Offline-first Field Service App: iOS + watchOS.
 
 ## Daily Notes
 
@@ -81,3 +82,16 @@ Habits are stored locally and mirrored through app-group UserDefaults.
 - `SmartHomeCommandCenter`: command/action executor and scene application logic.
 - `SmartHomeSync`: shared state persistence.
 - `SmartRoom`, `SmartDevice`, `SmartHomeState`, `SmartScene`, `SmartHomeCommand`: shared domain model.
+
+## Offline-first Field Service App
+
+- `FieldServiceAppApp`: iOS app entry point and background sync lifecycle hooks.
+- `FieldServiceAppView`: iOS dashboard for jobs, sync status, connectivity, and command execution.
+- `JobEditorView`: iOS job creation form.
+- `FieldServiceAppWatchApp`: watchOS app entry point and background sync lifecycle hooks.
+- `WatchFieldServiceAppView`: watch quick sync and job status actions.
+- `FieldServiceStore`: shared offline-first state store with command handling and recovery sync.
+- `FieldServiceLocalDatabase`: shared local persistence layer for jobs and mutation queue.
+- `FieldServiceSyncEngine`: shared sync engine to merge local changes with remote snapshot.
+- `FieldServiceConflictResolver`: shared deterministic conflict resolution logic.
+- `FieldJob`, `FieldMutation`, `FieldCommand`, `FieldJobStatus`, `FieldJobPriority`: shared domain model.

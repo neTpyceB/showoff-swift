@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B20000000000000000000001 /* FieldServiceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000031 /* FieldServiceModels.swift */; };
+		B20000000000000000000002 /* FieldServiceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000032 /* FieldServiceStore.swift */; };
+		B20000000000000000000003 /* FieldServiceSyncEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000033 /* FieldServiceSyncEngine.swift */; };
+		B20000000000000000000004 /* FieldServiceAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000034 /* FieldServiceAppApp.swift */; };
+		B20000000000000000000005 /* FieldServiceAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000035 /* FieldServiceAppView.swift */; };
+		B20000000000000000000006 /* JobEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000036 /* JobEditorView.swift */; };
+		B20000000000000000000007 /* FieldServiceBackgroundScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000037 /* FieldServiceBackgroundScheduler.swift */; };
+		B20000000000000000000008 /* FieldServiceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000031 /* FieldServiceModels.swift */; };
+		B20000000000000000000009 /* FieldServiceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000032 /* FieldServiceStore.swift */; };
+		B20000000000000000000010 /* FieldServiceSyncEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000033 /* FieldServiceSyncEngine.swift */; };
+		B20000000000000000000011 /* FieldServiceAppWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000038 /* FieldServiceAppWatchApp.swift */; };
+		B20000000000000000000012 /* WatchFieldServiceAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000039 /* WatchFieldServiceAppView.swift */; };
+		B20000000000000000000013 /* FieldServiceStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000040 /* FieldServiceStoreTests.swift */; };
+		B20000000000000000000014 /* FieldServiceAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000041 /* FieldServiceAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B20000000000000000000021 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20000000000000000000061 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20000000000000000000071;
+			remoteInfo = FieldServiceApp;
+		};
+		B20000000000000000000022 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20000000000000000000061 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20000000000000000000071;
+			remoteInfo = FieldServiceApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B20000000000000000000031 /* FieldServiceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldServiceModels.swift; sourceTree = "<group>"; };
+		B20000000000000000000032 /* FieldServiceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldServiceStore.swift; sourceTree = "<group>"; };
+		B20000000000000000000033 /* FieldServiceSyncEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldServiceSyncEngine.swift; sourceTree = "<group>"; };
+		B20000000000000000000034 /* FieldServiceAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldServiceAppApp.swift; sourceTree = "<group>"; };
+		B20000000000000000000035 /* FieldServiceAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldServiceAppView.swift; sourceTree = "<group>"; };
+		B20000000000000000000036 /* JobEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobEditorView.swift; sourceTree = "<group>"; };
+		B20000000000000000000037 /* FieldServiceBackgroundScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldServiceBackgroundScheduler.swift; sourceTree = "<group>"; };
+		B20000000000000000000038 /* FieldServiceAppWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldServiceAppWatchApp.swift; sourceTree = "<group>"; };
+		B20000000000000000000039 /* WatchFieldServiceAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchFieldServiceAppView.swift; sourceTree = "<group>"; };
+		B20000000000000000000040 /* FieldServiceStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldServiceStoreTests.swift; sourceTree = "<group>"; };
+		B20000000000000000000041 /* FieldServiceAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldServiceAppUITests.swift; sourceTree = "<group>"; };
+		B20000000000000000000042 /* FieldServiceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FieldServiceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20000000000000000000043 /* FieldServiceAppWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FieldServiceAppWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20000000000000000000044 /* FieldServiceAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FieldServiceAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20000000000000000000045 /* FieldServiceAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FieldServiceAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B20000000000000000000081 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		B20000000000000000000082 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		B20000000000000000000083 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		B20000000000000000000084 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B20000000000000000000051 = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000052 /* FieldServiceAppShared */,
+				B20000000000000000000053 /* FieldServiceApp */,
+				B20000000000000000000054 /* FieldServiceAppWatch */,
+				B20000000000000000000055 /* FieldServiceAppTests */,
+				B20000000000000000000056 /* FieldServiceAppUITests */,
+				B20000000000000000000057 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B20000000000000000000052 /* FieldServiceAppShared */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000031 /* FieldServiceModels.swift */,
+				B20000000000000000000032 /* FieldServiceStore.swift */,
+				B20000000000000000000033 /* FieldServiceSyncEngine.swift */,
+			);
+			path = FieldServiceAppShared;
+			sourceTree = "<group>";
+		};
+		B20000000000000000000053 /* FieldServiceApp */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000034 /* FieldServiceAppApp.swift */,
+				B20000000000000000000035 /* FieldServiceAppView.swift */,
+				B20000000000000000000036 /* JobEditorView.swift */,
+				B20000000000000000000037 /* FieldServiceBackgroundScheduler.swift */,
+			);
+			path = FieldServiceApp;
+			sourceTree = "<group>";
+		};
+		B20000000000000000000054 /* FieldServiceAppWatch */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000038 /* FieldServiceAppWatchApp.swift */,
+				B20000000000000000000039 /* WatchFieldServiceAppView.swift */,
+			);
+			path = FieldServiceAppWatch;
+			sourceTree = "<group>";
+		};
+		B20000000000000000000055 /* FieldServiceAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000040 /* FieldServiceStoreTests.swift */,
+			);
+			path = FieldServiceAppTests;
+			sourceTree = "<group>";
+		};
+		B20000000000000000000056 /* FieldServiceAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000041 /* FieldServiceAppUITests.swift */,
+			);
+			path = FieldServiceAppUITests;
+			sourceTree = "<group>";
+		};
+		B20000000000000000000057 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20000000000000000000042 /* FieldServiceApp.app */,
+				B20000000000000000000043 /* FieldServiceAppWatch.app */,
+				B20000000000000000000044 /* FieldServiceAppTests.xctest */,
+				B20000000000000000000045 /* FieldServiceAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B20000000000000000000071 /* FieldServiceApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20000000000000000000161 /* Build configuration list for PBXNativeTarget "FieldServiceApp" */;
+			buildPhases = (
+				B20000000000000000000091 /* Sources */,
+				B20000000000000000000081 /* Frameworks */,
+				B20000000000000000000092 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = FieldServiceApp;
+			productName = FieldServiceApp;
+			productReference = B20000000000000000000042 /* FieldServiceApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B20000000000000000000072 /* FieldServiceAppWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20000000000000000000162 /* Build configuration list for PBXNativeTarget "FieldServiceAppWatch" */;
+			buildPhases = (
+				B20000000000000000000093 /* Sources */,
+				B20000000000000000000082 /* Frameworks */,
+				B20000000000000000000094 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = FieldServiceAppWatch;
+			productName = FieldServiceAppWatch;
+			productReference = B20000000000000000000043 /* FieldServiceAppWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B20000000000000000000073 /* FieldServiceAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20000000000000000000163 /* Build configuration list for PBXNativeTarget "FieldServiceAppTests" */;
+			buildPhases = (
+				B20000000000000000000095 /* Sources */,
+				B20000000000000000000083 /* Frameworks */,
+				B20000000000000000000096 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = (
+				B20000000000000000000023 /* PBXTargetDependency */,
+			);
+			name = FieldServiceAppTests;
+			productName = FieldServiceAppTests;
+			productReference = B20000000000000000000044 /* FieldServiceAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B20000000000000000000074 /* FieldServiceAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20000000000000000000164 /* Build configuration list for PBXNativeTarget "FieldServiceAppUITests" */;
+			buildPhases = (
+				B20000000000000000000097 /* Sources */,
+				B20000000000000000000084 /* Frameworks */,
+				B20000000000000000000098 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = (
+				B20000000000000000000024 /* PBXTargetDependency */,
+			);
+			name = FieldServiceAppUITests;
+			productName = FieldServiceAppUITests;
+			productReference = B20000000000000000000045 /* FieldServiceAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20000000000000000000061 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					B20000000000000000000071 = {CreatedOnToolsVersion = 26.4;};
+					B20000000000000000000072 = {CreatedOnToolsVersion = 26.4;};
+					B20000000000000000000073 = {CreatedOnToolsVersion = 26.4; TestTargetID = B20000000000000000000071;};
+					B20000000000000000000074 = {CreatedOnToolsVersion = 26.4; TestTargetID = B20000000000000000000071;};
+				};
+			};
+			buildConfigurationList = B20000000000000000000160 /* Build configuration list for PBXProject "FieldServiceApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = B20000000000000000000051;
+			productRefGroup = B20000000000000000000057 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B20000000000000000000071 /* FieldServiceApp */,
+				B20000000000000000000072 /* FieldServiceAppWatch */,
+				B20000000000000000000073 /* FieldServiceAppTests */,
+				B20000000000000000000074 /* FieldServiceAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B20000000000000000000092 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		B20000000000000000000094 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		B20000000000000000000096 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		B20000000000000000000098 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B20000000000000000000091 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20000000000000000000001 /* FieldServiceModels.swift in Sources */,
+				B20000000000000000000002 /* FieldServiceStore.swift in Sources */,
+				B20000000000000000000003 /* FieldServiceSyncEngine.swift in Sources */,
+				B20000000000000000000004 /* FieldServiceAppApp.swift in Sources */,
+				B20000000000000000000005 /* FieldServiceAppView.swift in Sources */,
+				B20000000000000000000006 /* JobEditorView.swift in Sources */,
+				B20000000000000000000007 /* FieldServiceBackgroundScheduler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20000000000000000000093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20000000000000000000008 /* FieldServiceModels.swift in Sources */,
+				B20000000000000000000009 /* FieldServiceStore.swift in Sources */,
+				B20000000000000000000010 /* FieldServiceSyncEngine.swift in Sources */,
+				B20000000000000000000011 /* FieldServiceAppWatchApp.swift in Sources */,
+				B20000000000000000000012 /* WatchFieldServiceAppView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20000000000000000000095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20000000000000000000013 /* FieldServiceStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20000000000000000000097 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20000000000000000000014 /* FieldServiceAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B20000000000000000000023 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = B20000000000000000000071 /* FieldServiceApp */; targetProxy = B20000000000000000000021 /* PBXContainerItemProxy */; };
+		B20000000000000000000024 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = B20000000000000000000071 /* FieldServiceApp */; targetProxy = B20000000000000000000022 /* PBXContainerItemProxy */; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B20000000000000000000101 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+			};
+			name = Debug;
+		};
+		B20000000000000000000102 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B20000000000000000000111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Field Service";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.FieldServiceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B20000000000000000000112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Field Service";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.FieldServiceApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		B20000000000000000000121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Field Service";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.showoff.FieldServiceApp;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.FieldServiceApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Debug;
+		};
+		B20000000000000000000122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Field Service";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.showoff.FieldServiceApp;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.FieldServiceApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Release;
+		};
+		B20000000000000000000131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.FieldServiceAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FieldServiceApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FieldServiceApp";
+			};
+			name = Debug;
+		};
+		B20000000000000000000132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.FieldServiceAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FieldServiceApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FieldServiceApp";
+			};
+			name = Release;
+		};
+		B20000000000000000000141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.FieldServiceAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = FieldServiceApp;
+			};
+			name = Debug;
+		};
+		B20000000000000000000142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.FieldServiceAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = FieldServiceApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B20000000000000000000160 /* Build configuration list for PBXProject "FieldServiceApp" */ = {isa = XCConfigurationList; buildConfigurations = (B20000000000000000000101 /* Debug */, B20000000000000000000102 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		B20000000000000000000161 /* Build configuration list for PBXNativeTarget "FieldServiceApp" */ = {isa = XCConfigurationList; buildConfigurations = (B20000000000000000000111 /* Debug */, B20000000000000000000112 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		B20000000000000000000162 /* Build configuration list for PBXNativeTarget "FieldServiceAppWatch" */ = {isa = XCConfigurationList; buildConfigurations = (B20000000000000000000121 /* Debug */, B20000000000000000000122 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		B20000000000000000000163 /* Build configuration list for PBXNativeTarget "FieldServiceAppTests" */ = {isa = XCConfigurationList; buildConfigurations = (B20000000000000000000131 /* Debug */, B20000000000000000000132 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		B20000000000000000000164 /* Build configuration list for PBXNativeTarget "FieldServiceAppUITests" */ = {isa = XCConfigurationList; buildConfigurations = (B20000000000000000000141 /* Debug */, B20000000000000000000142 /* Release */); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = B20000000000000000000061 /* Project object */;
+}

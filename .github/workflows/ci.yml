@@ -60,3 +60,9 @@ jobs:
         run: xcodebuild build -project SmartHomeControl.xcodeproj -scheme SmartHomeControlWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"
       - name: Build Smart Home Control TV
         run: xcodebuild build -project SmartHomeControl.xcodeproj -scheme SmartHomeControlTV -destination "platform=tvOS Simulator,id=$TV_SIMULATOR_ID,arch=arm64"
+      - name: Build Field Service App
+        run: xcodebuild build -project FieldServiceApp.xcodeproj -scheme FieldServiceApp -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64"
+      - name: Test Field Service App
+        run: xcodebuild test -project FieldServiceApp.xcodeproj -scheme FieldServiceApp -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
+      - name: Build Field Service App Watch
+        run: xcodebuild build -project FieldServiceApp.xcodeproj -scheme FieldServiceAppWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"

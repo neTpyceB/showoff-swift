@@ -17,6 +17,7 @@ Independent Apple app projects.
 - `MovieSeriesBrowser.xcodeproj`: iOS + tvOS movie and series browser.
 - `FitnessDashboard.xcodeproj`: iOS + watchOS personal fitness dashboard.
 - `SmartHomeControl.xcodeproj`: iOS + watchOS + tvOS smart home control app.
+- `FieldServiceApp.xcodeproj`: iOS + watchOS offline-first field service app.
 
 ## Daily Notes
 
@@ -82,4 +83,15 @@ TV_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devic
 xcodebuild test -project SmartHomeControl.xcodeproj -scheme SmartHomeControl -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
 xcodebuild build -project SmartHomeControl.xcodeproj -scheme SmartHomeControlWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"
 xcodebuild build -project SmartHomeControl.xcodeproj -scheme SmartHomeControlTV -destination "platform=tvOS Simulator,id=$TV_SIMULATOR_ID,arch=arm64"
+```
+
+## Offline-first Field Service App
+
+Open `FieldServiceApp.xcodeproj` in Xcode. Run `FieldServiceApp` on iPhone and `FieldServiceAppWatch` on Apple Watch.
+
+```sh
+SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')
+WATCH_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("watchOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple Watch Series 11 (46mm)" }.fetch("udid")')
+xcodebuild test -project FieldServiceApp.xcodeproj -scheme FieldServiceApp -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
+xcodebuild build -project FieldServiceApp.xcodeproj -scheme FieldServiceAppWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"
 ```

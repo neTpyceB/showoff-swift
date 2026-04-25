@@ -67,3 +67,16 @@ Local operations:
 - Set thermostat target temperature.
 - Activate scenes (`relax`, `movie`, `away`).
 - Apply realtime state tick updates.
+
+## Offline-first Field Service App
+
+Local operations:
+
+- Create field job locally.
+- Update job status (`open`, `inProgress`, `completed`) locally.
+- Update job note locally.
+- Persist local jobs and pending mutation queue.
+- Toggle online/offline state.
+- Run sync to merge queued local mutations with remote snapshot.
+- Resolve local/remote conflicts by version and updated timestamp.
+- Recover pending sync queue on next online session.
