@@ -42,11 +42,16 @@
 - Added local database, offline mutation queue, sync engine, conflict resolution, and recovery flow.
 - Added Offline-first Field Service App unit and UI tests.
 - Updated CI and docs for Offline-first Field Service App.
+- Added independent Streaming / Media Platform project.
+- Added Streaming / Media Platform for iOS, tvOS, and watchOS companion.
+- Added shared media models, command center, local sync, continuation state, and recommendation cache.
+- Added iOS browsing/player UI, tvOS catalog/player UI, and watchOS companion controls.
+- Added Streaming / Media Platform unit and UI tests.
 
 ## Current
 
-- Main branch contains all projects.
+- Waiting for project 9 scope.
 
 ## Next
 
-- Implement project 8.
+- Implement project 9.
