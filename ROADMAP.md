@@ -47,11 +47,17 @@
 - Added shared media models, command center, local sync, continuation state, and recommendation cache.
 - Added iOS browsing/player UI, tvOS catalog/player UI, and watchOS companion controls.
 - Added Streaming / Media Platform unit and UI tests.
+- Added independent Spatial Collaboration App project.
+- Added Spatial Collaboration App for iOS and visionOS.
+- Added shared board/card models, actor-backed workspace store, search, selection, and card commands.
+- Added iOS board/card editor UI and visionOS volumetric workspace UI.
+- Added Spatial Collaboration App unit and UI tests.
+- Updated CI and docs for Streaming / Media Platform and Spatial Collaboration App.
 
 ## Current
 
-- Waiting for project 9 scope.
+- Waiting for project 10 scope.
 
 ## Next
 
-- Implement project 9.
+- Implement project 10.
