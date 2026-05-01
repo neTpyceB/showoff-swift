@@ -40,7 +40,7 @@ final class SmartHomeStore: ObservableObject {
         realtimeTask = Task { [weak self] in
             while !Task.isCancelled {
                 try? await Task.sleep(nanoseconds: intervalSeconds * 1_000_000_000)
-                await self?.applyRealtimeTick()
+                self?.applyRealtimeTick()
             }
         }
     }

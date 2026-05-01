@@ -53,6 +53,8 @@
 - Added iOS board/card editor UI and visionOS volumetric workspace UI.
 - Added Spatial Collaboration App unit and UI tests.
 - Updated CI and docs for Streaming / Media Platform and Spatial Collaboration App.
+- Fixed Smart Home Control UI test state reset and movie scene flow.
+- Removed Smart Home Control realtime update warning.
 
 ## Current
 
