@@ -1,0 +1,999 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D44551F50F0786677E36B8D /* EcosystemSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1687F68A2F40687A98E05324 /* EcosystemSync.swift */; };
+		43990F6545A442F8B1702157 /* SpatialCollaborationVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF573AA3C6BA8EB68392BFF4 /* SpatialCollaborationVisionApp.swift */; };
+		4C2E939188BAAE7EFB05E330 /* EcosystemState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536CBC254C250AEB46BB8D0C /* EcosystemState.swift */; };
+		70156CCB88C53B4EFF85E110 /* EcosystemModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000031 /* EcosystemModels.swift */; };
+		7513499C1E6A967886458C57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 398AF03301ADDDD3E1453517 /* Foundation.framework */; };
+		779CC03544D70972410F8E99 /* EcosystemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000035 /* EcosystemStore.swift */; };
+		C30000000000000000000001 /* EcosystemModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000031 /* EcosystemModels.swift */; };
+		C30000000000000000000002 /* EcosystemState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000032 /* EcosystemState.swift */; };
+		C30000000000000000000003 /* EcosystemCommandCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000033 /* EcosystemCommandCenter.swift */; };
+		C30000000000000000000004 /* EcosystemSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000034 /* EcosystemSync.swift */; };
+		C30000000000000000000005 /* EcosystemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000035 /* EcosystemStore.swift */; };
+		C30000000000000000000006 /* EcosystemProductApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000036 /* EcosystemProductApp.swift */; };
+		C30000000000000000000007 /* EcosystemDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000037 /* EcosystemDashboardView.swift */; };
+		C30000000000000000000008 /* EcosystemModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000031 /* EcosystemModels.swift */; };
+		C30000000000000000000009 /* EcosystemState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000032 /* EcosystemState.swift */; };
+		C30000000000000000000010 /* EcosystemCommandCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000033 /* EcosystemCommandCenter.swift */; };
+		C30000000000000000000011 /* EcosystemSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000034 /* EcosystemSync.swift */; };
+		C30000000000000000000012 /* EcosystemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000035 /* EcosystemStore.swift */; };
+		C30000000000000000000013 /* EcosystemProductWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000038 /* EcosystemProductWatchApp.swift */; };
+		C30000000000000000000014 /* WatchEcosystemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000039 /* WatchEcosystemView.swift */; };
+		C30000000000000000000015 /* EcosystemModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000031 /* EcosystemModels.swift */; };
+		C30000000000000000000016 /* EcosystemState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000032 /* EcosystemState.swift */; };
+		C30000000000000000000017 /* EcosystemCommandCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000033 /* EcosystemCommandCenter.swift */; };
+		C30000000000000000000018 /* EcosystemProductTVApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000040 /* EcosystemProductTVApp.swift */; };
+		C30000000000000000000019 /* EcosystemStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000041 /* EcosystemStoreTests.swift */; };
+		C30000000000000000000020 /* EcosystemProductUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000042 /* EcosystemProductUITests.swift */; };
+		C30000000000000000000022 /* EcosystemSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000034 /* EcosystemSync.swift */; };
+		C30000000000000000000023 /* EcosystemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000035 /* EcosystemStore.swift */; };
+		D8141C7B1D2792C03130AF49 /* EcosystemCommandCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30000000000000000000033 /* EcosystemCommandCenter.swift */; };
+		DDD929FD84D690437DDAFACC /* EcosystemVisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F46AC5E26292431499E6C42 /* EcosystemVisionView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C30000000000000000000051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30000000000000000000071 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30000000000000000000081;
+			remoteInfo = EcosystemProduct;
+		};
+		C30000000000000000000052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C30000000000000000000071 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C30000000000000000000081;
+			remoteInfo = EcosystemProduct;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A2660CCB099B2DE12CD2679 /* EcosystemStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EcosystemStore.swift; sourceTree = "<group>"; };
+		1687F68A2F40687A98E05324 /* EcosystemSync.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EcosystemSync.swift; sourceTree = "<group>"; };
+		1FA5A923CD797012B272C7DE /* EcosystemProductVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcosystemProductVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		398AF03301ADDDD3E1453517 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/XROS.platform/Developer/SDKs/XROS2.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4BCF80E5946B534BF324B977 /* EcosystemCommandCenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EcosystemCommandCenter.swift; sourceTree = "<group>"; };
+		536CBC254C250AEB46BB8D0C /* EcosystemState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EcosystemState.swift; sourceTree = "<group>"; };
+		690682C591962C0266709C2B /* EcosystemModels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EcosystemModels.swift; sourceTree = "<group>"; };
+		7F46AC5E26292431499E6C42 /* EcosystemVisionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EcosystemVisionView.swift; sourceTree = "<group>"; };
+		BF573AA3C6BA8EB68392BFF4 /* SpatialCollaborationVisionApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpatialCollaborationVisionApp.swift; sourceTree = "<group>"; };
+		C30000000000000000000031 /* EcosystemModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcosystemModels.swift; sourceTree = "<group>"; };
+		C30000000000000000000032 /* EcosystemState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcosystemState.swift; sourceTree = "<group>"; };
+		C30000000000000000000033 /* EcosystemCommandCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcosystemCommandCenter.swift; sourceTree = "<group>"; };
+		C30000000000000000000034 /* EcosystemSync.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcosystemSync.swift; sourceTree = "<group>"; };
+		C30000000000000000000035 /* EcosystemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcosystemStore.swift; sourceTree = "<group>"; };
+		C30000000000000000000036 /* EcosystemProductApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcosystemProductApp.swift; sourceTree = "<group>"; };
+		C30000000000000000000037 /* EcosystemDashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcosystemDashboardView.swift; sourceTree = "<group>"; };
+		C30000000000000000000038 /* EcosystemProductWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcosystemProductWatchApp.swift; sourceTree = "<group>"; };
+		C30000000000000000000039 /* WatchEcosystemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchEcosystemView.swift; sourceTree = "<group>"; };
+		C30000000000000000000040 /* EcosystemProductTVApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcosystemProductTVApp.swift; sourceTree = "<group>"; };
+		C30000000000000000000041 /* EcosystemStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcosystemStoreTests.swift; sourceTree = "<group>"; };
+		C30000000000000000000042 /* EcosystemProductUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EcosystemProductUITests.swift; sourceTree = "<group>"; };
+		C30000000000000000000043 /* EcosystemProduct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcosystemProduct.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30000000000000000000044 /* EcosystemProductWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcosystemProductWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30000000000000000000045 /* EcosystemProductTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EcosystemProductTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30000000000000000000046 /* EcosystemProductTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcosystemProductTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30000000000000000000047 /* EcosystemProductUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EcosystemProductUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E8150AF6BC2C0E4AF765D47 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7513499C1E6A967886458C57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30000000000000000000091 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30000000000000000000092 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30000000000000000000093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30000000000000000000094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30000000000000000000095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B68953641B9D90C963CBE28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F447F30C223BE5F580FBDD5 /* visionOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8F447F30C223BE5F580FBDD5 /* visionOS */ = {
+			isa = PBXGroup;
+			children = (
+				398AF03301ADDDD3E1453517 /* Foundation.framework */,
+			);
+			name = visionOS;
+			sourceTree = "<group>";
+		};
+		A5E97D83A8CA70955859850A /* EcosystemProductVision */ = {
+			isa = PBXGroup;
+			children = (
+				BF573AA3C6BA8EB68392BFF4 /* SpatialCollaborationVisionApp.swift */,
+				7F46AC5E26292431499E6C42 /* EcosystemVisionView.swift */,
+			);
+			name = EcosystemProductVision;
+			path = EcosystemProductVision;
+			sourceTree = "<group>";
+		};
+		C30000000000000000000061 = {
+			isa = PBXGroup;
+			children = (
+				C30000000000000000000062 /* EcosystemProductShared */,
+				C30000000000000000000063 /* EcosystemProduct */,
+				C30000000000000000000064 /* EcosystemProductWatch */,
+				C30000000000000000000065 /* EcosystemProductTV */,
+				C30000000000000000000066 /* EcosystemProductTests */,
+				C30000000000000000000067 /* EcosystemProductUITests */,
+				C30000000000000000000068 /* Products */,
+				7B68953641B9D90C963CBE28 /* Frameworks */,
+				A5E97D83A8CA70955859850A /* EcosystemProductVision */,
+			);
+			sourceTree = "<group>";
+		};
+		C30000000000000000000062 /* EcosystemProductShared */ = {
+			isa = PBXGroup;
+			children = (
+				C30000000000000000000031 /* EcosystemModels.swift */,
+				C30000000000000000000032 /* EcosystemState.swift */,
+				C30000000000000000000033 /* EcosystemCommandCenter.swift */,
+				C30000000000000000000034 /* EcosystemSync.swift */,
+				C30000000000000000000035 /* EcosystemStore.swift */,
+				690682C591962C0266709C2B /* EcosystemModels.swift */,
+				536CBC254C250AEB46BB8D0C /* EcosystemState.swift */,
+				4BCF80E5946B534BF324B977 /* EcosystemCommandCenter.swift */,
+				1687F68A2F40687A98E05324 /* EcosystemSync.swift */,
+				0A2660CCB099B2DE12CD2679 /* EcosystemStore.swift */,
+			);
+			path = EcosystemProductShared;
+			sourceTree = "<group>";
+		};
+		C30000000000000000000063 /* EcosystemProduct */ = {
+			isa = PBXGroup;
+			children = (
+				C30000000000000000000036 /* EcosystemProductApp.swift */,
+				C30000000000000000000037 /* EcosystemDashboardView.swift */,
+			);
+			path = EcosystemProduct;
+			sourceTree = "<group>";
+		};
+		C30000000000000000000064 /* EcosystemProductWatch */ = {
+			isa = PBXGroup;
+			children = (
+				C30000000000000000000038 /* EcosystemProductWatchApp.swift */,
+				C30000000000000000000039 /* WatchEcosystemView.swift */,
+			);
+			path = EcosystemProductWatch;
+			sourceTree = "<group>";
+		};
+		C30000000000000000000065 /* EcosystemProductTV */ = {
+			isa = PBXGroup;
+			children = (
+				C30000000000000000000040 /* EcosystemProductTVApp.swift */,
+			);
+			path = EcosystemProductTV;
+			sourceTree = "<group>";
+		};
+		C30000000000000000000066 /* EcosystemProductTests */ = {
+			isa = PBXGroup;
+			children = (
+				C30000000000000000000041 /* EcosystemStoreTests.swift */,
+			);
+			path = EcosystemProductTests;
+			sourceTree = "<group>";
+		};
+		C30000000000000000000067 /* EcosystemProductUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C30000000000000000000042 /* EcosystemProductUITests.swift */,
+			);
+			path = EcosystemProductUITests;
+			sourceTree = "<group>";
+		};
+		C30000000000000000000068 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C30000000000000000000043 /* EcosystemProduct.app */,
+				C30000000000000000000044 /* EcosystemProductWatch.app */,
+				C30000000000000000000045 /* EcosystemProductTV.app */,
+				C30000000000000000000046 /* EcosystemProductTests.xctest */,
+				C30000000000000000000047 /* EcosystemProductUITests.xctest */,
+				1FA5A923CD797012B272C7DE /* EcosystemProductVision.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71DD9F6F24FDE48028F2950F /* EcosystemProductVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 167BA1CF08979364B6F85BD2 /* Build configuration list for PBXNativeTarget "EcosystemProductVision" */;
+			buildPhases = (
+				89A716C8BD16BF8562996FD5 /* Sources */,
+				6E8150AF6BC2C0E4AF765D47 /* Frameworks */,
+				D117F37D3C402CD2FDC647F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EcosystemProductVision;
+			productName = EcosystemProductVision;
+			productReference = 1FA5A923CD797012B272C7DE /* EcosystemProductVision.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C30000000000000000000081 /* EcosystemProduct */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30000000000000000000201 /* Build configuration list for PBXNativeTarget "EcosystemProduct" */;
+			buildPhases = (
+				C30000000000000000000101 /* Sources */,
+				C30000000000000000000091 /* Frameworks */,
+				C30000000000000000000102 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EcosystemProduct;
+			productName = EcosystemProduct;
+			productReference = C30000000000000000000043 /* EcosystemProduct.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C30000000000000000000082 /* EcosystemProductWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30000000000000000000202 /* Build configuration list for PBXNativeTarget "EcosystemProductWatch" */;
+			buildPhases = (
+				C30000000000000000000104 /* Sources */,
+				C30000000000000000000092 /* Frameworks */,
+				C30000000000000000000105 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EcosystemProductWatch;
+			productName = EcosystemProductWatch;
+			productReference = C30000000000000000000044 /* EcosystemProductWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C30000000000000000000083 /* EcosystemProductTV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30000000000000000000203 /* Build configuration list for PBXNativeTarget "EcosystemProductTV" */;
+			buildPhases = (
+				C30000000000000000000106 /* Sources */,
+				C30000000000000000000093 /* Frameworks */,
+				C30000000000000000000107 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EcosystemProductTV;
+			productName = EcosystemProductTV;
+			productReference = C30000000000000000000045 /* EcosystemProductTV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C30000000000000000000084 /* EcosystemProductTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30000000000000000000204 /* Build configuration list for PBXNativeTarget "EcosystemProductTests" */;
+			buildPhases = (
+				C30000000000000000000108 /* Sources */,
+				C30000000000000000000094 /* Frameworks */,
+				C30000000000000000000109 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C30000000000000000000055 /* PBXTargetDependency */,
+			);
+			name = EcosystemProductTests;
+			productName = EcosystemProductTests;
+			productReference = C30000000000000000000046 /* EcosystemProductTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C30000000000000000000085 /* EcosystemProductUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C30000000000000000000205 /* Build configuration list for PBXNativeTarget "EcosystemProductUITests" */;
+			buildPhases = (
+				C30000000000000000000110 /* Sources */,
+				C30000000000000000000095 /* Frameworks */,
+				C30000000000000000000111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C30000000000000000000056 /* PBXTargetDependency */,
+			);
+			name = EcosystemProductUITests;
+			productName = EcosystemProductUITests;
+			productReference = C30000000000000000000047 /* EcosystemProductUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C30000000000000000000071 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					C30000000000000000000081 = {
+						CreatedOnToolsVersion = 26.4;
+					};
+					C30000000000000000000082 = {
+						CreatedOnToolsVersion = 26.4;
+					};
+					C30000000000000000000083 = {
+						CreatedOnToolsVersion = 26.4;
+					};
+					C30000000000000000000084 = {
+						CreatedOnToolsVersion = 26.4;
+						TestTargetID = C30000000000000000000081;
+					};
+					C30000000000000000000085 = {
+						CreatedOnToolsVersion = 26.4;
+						TestTargetID = C30000000000000000000081;
+					};
+				};
+			};
+			buildConfigurationList = C30000000000000000000200 /* Build configuration list for PBXProject "EcosystemProduct" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C30000000000000000000061;
+			productRefGroup = C30000000000000000000068 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C30000000000000000000081 /* EcosystemProduct */,
+				C30000000000000000000082 /* EcosystemProductWatch */,
+				C30000000000000000000083 /* EcosystemProductTV */,
+				C30000000000000000000084 /* EcosystemProductTests */,
+				C30000000000000000000085 /* EcosystemProductUITests */,
+				71DD9F6F24FDE48028F2950F /* EcosystemProductVision */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C30000000000000000000102 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30000000000000000000105 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30000000000000000000107 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30000000000000000000109 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30000000000000000000111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D117F37D3C402CD2FDC647F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89A716C8BD16BF8562996FD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C2E939188BAAE7EFB05E330 /* EcosystemState.swift in Sources */,
+				2D44551F50F0786677E36B8D /* EcosystemSync.swift in Sources */,
+				70156CCB88C53B4EFF85E110 /* EcosystemModels.swift in Sources */,
+				D8141C7B1D2792C03130AF49 /* EcosystemCommandCenter.swift in Sources */,
+				779CC03544D70972410F8E99 /* EcosystemStore.swift in Sources */,
+				43990F6545A442F8B1702157 /* SpatialCollaborationVisionApp.swift in Sources */,
+				DDD929FD84D690437DDAFACC /* EcosystemVisionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30000000000000000000101 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30000000000000000000001 /* EcosystemModels.swift in Sources */,
+				C30000000000000000000002 /* EcosystemState.swift in Sources */,
+				C30000000000000000000003 /* EcosystemCommandCenter.swift in Sources */,
+				C30000000000000000000004 /* EcosystemSync.swift in Sources */,
+				C30000000000000000000005 /* EcosystemStore.swift in Sources */,
+				C30000000000000000000006 /* EcosystemProductApp.swift in Sources */,
+				C30000000000000000000007 /* EcosystemDashboardView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30000000000000000000104 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30000000000000000000008 /* EcosystemModels.swift in Sources */,
+				C30000000000000000000009 /* EcosystemState.swift in Sources */,
+				C30000000000000000000010 /* EcosystemCommandCenter.swift in Sources */,
+				C30000000000000000000011 /* EcosystemSync.swift in Sources */,
+				C30000000000000000000012 /* EcosystemStore.swift in Sources */,
+				C30000000000000000000013 /* EcosystemProductWatchApp.swift in Sources */,
+				C30000000000000000000014 /* WatchEcosystemView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30000000000000000000106 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30000000000000000000015 /* EcosystemModels.swift in Sources */,
+				C30000000000000000000016 /* EcosystemState.swift in Sources */,
+				C30000000000000000000017 /* EcosystemCommandCenter.swift in Sources */,
+				C30000000000000000000022 /* EcosystemSync.swift in Sources */,
+				C30000000000000000000023 /* EcosystemStore.swift in Sources */,
+				C30000000000000000000018 /* EcosystemProductTVApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30000000000000000000108 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30000000000000000000019 /* EcosystemStoreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C30000000000000000000110 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C30000000000000000000020 /* EcosystemProductUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C30000000000000000000055 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30000000000000000000081 /* EcosystemProduct */;
+			targetProxy = C30000000000000000000051 /* PBXContainerItemProxy */;
+		};
+		C30000000000000000000056 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C30000000000000000000081 /* EcosystemProduct */;
+			targetProxy = C30000000000000000000052 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BADDC6B95A5EC3CB8801675D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APPINTENTS_METADATA_GENERATION = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ecosystem Vision";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.EcosystemProductVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Debug;
+		};
+		C30000000000000000000121 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+			};
+			name = Debug;
+		};
+		C30000000000000000000122 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C30000000000000000000131 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APPINTENTS_METADATA_GENERATION = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ecosystem Product";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.EcosystemProduct;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		C30000000000000000000132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APPINTENTS_METADATA_GENERATION = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ecosystem Product";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.EcosystemProduct;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C30000000000000000000141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APPINTENTS_METADATA_GENERATION = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ecosystem Product";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.showoff.EcosystemProduct;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.EcosystemProduct.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Debug;
+		};
+		C30000000000000000000142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APPINTENTS_METADATA_GENERATION = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ecosystem Product";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.showoff.EcosystemProduct;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.EcosystemProduct.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "watchos watchsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Release;
+		};
+		C30000000000000000000151 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APPINTENTS_METADATA_GENERATION = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ecosystem Product TV";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.EcosystemProductTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Debug;
+		};
+		C30000000000000000000152 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APPINTENTS_METADATA_GENERATION = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ecosystem Product TV";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.EcosystemProductTV;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Release;
+		};
+		C30000000000000000000161 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.EcosystemProductTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EcosystemProduct.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EcosystemProduct";
+			};
+			name = Debug;
+		};
+		C30000000000000000000162 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.EcosystemProductTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EcosystemProduct.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EcosystemProduct";
+			};
+			name = Release;
+		};
+		C30000000000000000000171 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.EcosystemProductUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = EcosystemProduct;
+			};
+			name = Debug;
+		};
+		C30000000000000000000172 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.EcosystemProductUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = EcosystemProduct;
+			};
+			name = Release;
+		};
+		F1EED7A1E05FC51D9EF98E94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APPINTENTS_METADATA_GENERATION = NO;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Ecosystem Vision";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.showoff.EcosystemProductVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = xros;
+				SUPPORTED_PLATFORMS = "xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 7;
+				XROS_DEPLOYMENT_TARGET = 26.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		167BA1CF08979364B6F85BD2 /* Build configuration list for PBXNativeTarget "EcosystemProductVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1EED7A1E05FC51D9EF98E94 /* Release */,
+				BADDC6B95A5EC3CB8801675D /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30000000000000000000200 /* Build configuration list for PBXProject "EcosystemProduct" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30000000000000000000121 /* Debug */,
+				C30000000000000000000122 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30000000000000000000201 /* Build configuration list for PBXNativeTarget "EcosystemProduct" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30000000000000000000131 /* Debug */,
+				C30000000000000000000132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30000000000000000000202 /* Build configuration list for PBXNativeTarget "EcosystemProductWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30000000000000000000141 /* Debug */,
+				C30000000000000000000142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30000000000000000000203 /* Build configuration list for PBXNativeTarget "EcosystemProductTV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30000000000000000000151 /* Debug */,
+				C30000000000000000000152 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30000000000000000000204 /* Build configuration list for PBXNativeTarget "EcosystemProductTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30000000000000000000161 /* Debug */,
+				C30000000000000000000162 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C30000000000000000000205 /* Build configuration list for PBXNativeTarget "EcosystemProductUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C30000000000000000000171 /* Debug */,
+				C30000000000000000000172 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C30000000000000000000071 /* Project object */;
+}

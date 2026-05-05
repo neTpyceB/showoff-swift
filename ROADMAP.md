@@ -56,6 +56,8 @@
 - Fixed Smart Home Control UI test state reset and movie scene flow.
 - Removed Smart Home Control realtime update warning.
 - Fixed Weather Companion and Smart Home Control CI test failures.
+- Finished project 10 Full Apple Ecosystem Product (iOS + watchOS + tvOS + visionOS) with working visionOS target/scheme.
+- Validated project 10: iOS tests pass, watchOS/tvOS/visionOS builds pass.
 
 ## Current
 
