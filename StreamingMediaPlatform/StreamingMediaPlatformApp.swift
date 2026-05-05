@@ -28,10 +28,7 @@ struct StreamingMediaPlatformApp: App {
             return StreamingMediaStore()
         }
 
-        let defaults = UserDefaults(suiteName: "StreamingMediaPlatformUITests")!
-        defaults.removeObject(forKey: "streaming.state")
-        return StreamingMediaStore(
-            sync: StreamingMediaSync(defaults: defaults, key: "streaming.state")
-        )
+        UserDefaults.standard.removeObject(forKey: "streaming.state")
+        return StreamingMediaStore()
     }
 }
