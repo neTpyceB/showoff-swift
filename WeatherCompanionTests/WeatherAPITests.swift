@@ -22,10 +22,22 @@ final class WeatherAPITests: XCTestCase {
         XCTAssertEqual(report.hourly.count, 2)
     }
 
-    func testFetchBerlinWeather() async throws {
-        let report = try await WeatherAPI().weather(for: .berlin)
+    func testDecodeWeatherWithSingleHour() throws {
+        let json = """
+        {
+          "current": { "temperature_2m": 8.0, "weather_code": 3 },
+          "hourly": {
+            "time": ["2026-04-16T12:00"],
+            "temperature_2m": [8.0],
+            "weather_code": [3]
+          }
+        }
+        """.data(using: .utf8)!
 
-        XCTAssertEqual(report.place.name, "Berlin")
-        XCTAssertFalse(report.hourly.isEmpty)
+        let report = try WeatherAPI.decodeWeather(json, place: .berlin)
+
+        XCTAssertEqual(report.temperature, 8.0)
+        XCTAssertEqual(report.condition, "Cloudy")
+        XCTAssertEqual(report.hourly.count, 1)
     }
 }

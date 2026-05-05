@@ -55,11 +55,12 @@
 - Updated CI and docs for Streaming / Media Platform and Spatial Collaboration App.
 - Fixed Smart Home Control UI test state reset and movie scene flow.
 - Removed Smart Home Control realtime update warning.
+- Fixed Weather Companion and Smart Home Control CI test failures.
 
 ## Current
 
-- Waiting for project 10 scope.
+- Waiting for next requested change.
 
 ## Next
 
-- Implement project 10.
+- Run CI after next change.
