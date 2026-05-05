@@ -13,6 +13,9 @@ final class WeatherViewModel: ObservableObject {
 
     init(store: FavoritePlaceStore = FavoritePlaceStore()) {
         self.store = store
+        if let seedQuery = ProcessInfo.processInfo.environment["WEATHER_UI_TEST_PLACE_QUERY"] {
+            query = seedQuery
+        }
     }
 
     func load(_ place: Place) async {

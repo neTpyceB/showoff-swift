@@ -2,8 +2,8 @@ import Combine
 import Foundation
 
 @MainActor
-final class SmartHomeStore: ObservableObject {
-    @Published private(set) var state: SmartHomeState {
+final class EcosystemStore: ObservableObject {
+    @Published private(set) var state: EcosystemState {
         didSet {
             sync.save(state)
         }
@@ -11,11 +11,11 @@ final class SmartHomeStore: ObservableObject {
 
     let rooms = SmartRoom.allCases
     let scenes = SmartScene.allCases
-    private let sync: SmartHomeSync
-    private let commandCenter = SmartHomeCommandCenter()
+    private let sync: EcosystemSync
+    private let commandCenter = EcosystemCommandCenter()
     private var realtimeTask: Task<Void, Never>?
 
-    init(sync: SmartHomeSync = SmartHomeSync()) {
+    init(sync: EcosystemSync = EcosystemSync()) {
         self.sync = sync
         state = sync.load() ?? .initial()
     }
@@ -28,7 +28,7 @@ final class SmartHomeStore: ObservableObject {
         state.devices(in: room)
     }
 
-    func execute(_ command: SmartHomeCommand) {
+    func execute(_ command: EcosystemCommand) {
         var updated = state
         commandCenter.execute(command, on: &updated)
         updated.lastUpdated = Date()

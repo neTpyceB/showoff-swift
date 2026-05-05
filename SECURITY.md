@@ -16,6 +16,8 @@ None.
 - Personal Fitness Dashboard stores workouts and permission state on device in UserDefaults.
 - Smart Home Control App stores room/device state on device in UserDefaults.
 - Offline-first Field Service App stores jobs, pending sync mutations, and remote snapshot simulation in UserDefaults.
+- Streaming / Media Platform stores local session, watchlist, playback, and continuation state in UserDefaults.
+- Spatial Collaboration App stores seeded board state in memory.
 
 ## Network
 
@@ -23,6 +25,8 @@ None.
 - Movie / Series Browser loads poster and trailer media over HTTPS.
 - Smart Home Control App has no external network calls.
 - Offline-first Field Service App has no external network calls.
+- Streaming / Media Platform loads poster and sample video media over HTTPS.
+- Spatial Collaboration App has no external network calls.
 
 ## Notifications
 

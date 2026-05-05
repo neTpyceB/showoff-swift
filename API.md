@@ -80,3 +80,32 @@ Local operations:
 - Run sync to merge queued local mutations with remote snapshot.
 - Resolve local/remote conflicts by version and updated timestamp.
 - Recover pending sync queue on next online session.
+
+## Streaming / Media Platform
+
+External resources:
+
+- Poster images: `https://picsum.photos`
+- Sample video streams: `https://commondatastorage.googleapis.com`
+
+Local operations:
+
+- Sign in and sign out local session.
+- Browse seeded catalog.
+- Select title.
+- Save or unsave title.
+- Start, pause, seek, and stop playback.
+- Persist continuation state.
+- Build local recommendations.
+
+## Spatial Collaboration App
+
+Local operations:
+
+- Load shared board.
+- Search cards.
+- Create note, media, and data cards.
+- Select card.
+- Edit card title and body.
+- Move card in 2D/depth position.
+- Delete card.

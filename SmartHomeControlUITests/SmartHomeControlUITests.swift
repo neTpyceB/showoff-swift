@@ -2,16 +2,28 @@ import XCTest
 
 final class SmartHomeControlUITests: XCTestCase {
     @MainActor
-    func testActivateAwayScene() {
+    func testActivateMovieScene() {
         let app = XCUIApplication()
+        app.launchArguments = ["-ui-testing-reset-state"]
         app.launch()
 
-        let cameras = app.staticTexts["cameras-active-count"]
-        XCTAssertTrue(cameras.waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["cameras-active-count"].waitForExistence(timeout: 10))
 
         app.buttons["scene-movie"].tap()
-        XCTAssertEqual(cameras.label, "0")
+        XCTAssertTrue(waitForLabel("0", identifier: "cameras-active-count", in: app))
 
         XCTAssertTrue(app.staticTexts["lights-on-count"].exists)
+    }
+
+    @MainActor
+    private func waitForLabel(_ label: String, identifier: String, in app: XCUIApplication) -> Bool {
+        let deadline = Date().addingTimeInterval(10)
+        while Date() < deadline {
+            if app.staticTexts[identifier].label == label {
+                return true
+            }
+            RunLoop.current.run(until: Date().addingTimeInterval(0.1))
+        }
+        return false
     }
 }

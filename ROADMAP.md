@@ -47,11 +47,22 @@
 - Added shared media models, command center, local sync, continuation state, and recommendation cache.
 - Added iOS browsing/player UI, tvOS catalog/player UI, and watchOS companion controls.
 - Added Streaming / Media Platform unit and UI tests.
+- Added independent Spatial Collaboration App project.
+- Added Spatial Collaboration App for iOS and visionOS.
+- Added shared board/card models, actor-backed workspace store, search, selection, and card commands.
+- Added iOS board/card editor UI and visionOS volumetric workspace UI.
+- Added Spatial Collaboration App unit and UI tests.
+- Updated CI and docs for Streaming / Media Platform and Spatial Collaboration App.
+- Fixed Smart Home Control UI test state reset and movie scene flow.
+- Removed Smart Home Control realtime update warning.
+- Fixed Weather Companion and Smart Home Control CI test failures.
+- Finished project 10 Full Apple Ecosystem Product (iOS + watchOS + tvOS + visionOS) with working visionOS target/scheme.
+- Validated project 10: iOS tests pass, watchOS/tvOS/visionOS builds pass.
 
 ## Current
 
-- Waiting for project 9 scope.
+- Waiting for next requested change.
 
 ## Next
 
-- Implement project 9.
+- Run CI after next change.

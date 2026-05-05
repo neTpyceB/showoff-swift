@@ -9,6 +9,8 @@
 - Personal Fitness Dashboard: iOS + watchOS.
 - Smart Home Control App: iOS + watchOS + tvOS.
 - Offline-first Field Service App: iOS + watchOS.
+- Streaming / Media Platform: iOS + tvOS + watchOS.
+- Spatial Collaboration App: iOS + visionOS.
 
 ## Daily Notes
 
@@ -95,3 +97,27 @@ Habits are stored locally and mirrored through app-group UserDefaults.
 - `FieldServiceSyncEngine`: shared sync engine to merge local changes with remote snapshot.
 - `FieldServiceConflictResolver`: shared deterministic conflict resolution logic.
 - `FieldJob`, `FieldMutation`, `FieldCommand`, `FieldJobStatus`, `FieldJobPriority`: shared domain model.
+
+## Streaming / Media Platform
+
+- `StreamingMediaPlatformApp`: iOS app entry point and playback lifecycle hooks.
+- `StreamingMediaDashboardView`: iOS catalog, recommendations, account, and player UI.
+- `StreamingMediaPlatformTVApp`: tvOS app entry point.
+- `TVStreamingMediaView`: tvOS catalog, focus selection, and player UI.
+- `StreamingMediaPlatformWatchApp`: watchOS companion entry point.
+- `WatchStreamingMediaView`: watch save/playback controls.
+- `StreamingMediaStore`: shared state store with persistence, playback ticks, and recommendation cache.
+- `StreamingMediaCommandCenter`: shared account, watchlist, continuation, and playback command executor.
+- `StreamingMediaSync`: shared local state persistence.
+- `StreamingTitle`, `StreamingSession`, `StreamingPlayback`, `StreamingContinuation`: shared domain model.
+
+## Spatial Collaboration App
+
+- `SpatialCollaborationApp`: iOS app entry point.
+- `WorkspaceBoardView`: iOS board list and navigation.
+- `CardDetailView`: iOS card editor and position controls.
+- `SpatialCollaborationVisionApp`: visionOS app entry point.
+- `SpatialWorkspaceView`: visionOS volumetric workspace surface.
+- `SpatialWorkspaceViewModel`: shared board state, search, selection, and commands.
+- `SpatialBoardStore`: shared actor-backed board store.
+- `WorkspaceBoard`, `WorkspaceCard`, `SpatialPosition`: shared domain model.

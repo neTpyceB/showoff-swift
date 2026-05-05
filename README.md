@@ -18,6 +18,8 @@ Independent Apple app projects.
 - `FitnessDashboard.xcodeproj`: iOS + watchOS personal fitness dashboard.
 - `SmartHomeControl.xcodeproj`: iOS + watchOS + tvOS smart home control app.
 - `FieldServiceApp.xcodeproj`: iOS + watchOS offline-first field service app.
+- `StreamingMediaPlatform.xcodeproj`: iOS + tvOS + watchOS streaming media app.
+- `SpatialCollaboration.xcodeproj`: iOS + visionOS spatial collaboration app.
 
 ## Daily Notes
 
@@ -94,4 +96,28 @@ SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices 
 WATCH_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("watchOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple Watch Series 11 (46mm)" }.fetch("udid")')
 xcodebuild test -project FieldServiceApp.xcodeproj -scheme FieldServiceApp -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
 xcodebuild build -project FieldServiceApp.xcodeproj -scheme FieldServiceAppWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"
+```
+
+## Streaming / Media Platform
+
+Open `StreamingMediaPlatform.xcodeproj` in Xcode. Run `StreamingMediaPlatform` on iPhone, `StreamingMediaPlatformTV` on Apple TV, and `StreamingMediaPlatformWatch` on Apple Watch.
+
+```sh
+SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')
+WATCH_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("watchOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple Watch Series 11 (46mm)" }.fetch("udid")')
+TV_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("tvOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple TV 4K (3rd generation)" }.fetch("udid")')
+xcodebuild test -project StreamingMediaPlatform.xcodeproj -scheme StreamingMediaPlatform -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
+xcodebuild build -project StreamingMediaPlatform.xcodeproj -scheme StreamingMediaPlatformTV -destination "platform=tvOS Simulator,id=$TV_SIMULATOR_ID,arch=arm64"
+xcodebuild build -project StreamingMediaPlatform.xcodeproj -scheme StreamingMediaPlatformWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"
+```
+
+## Spatial Collaboration App
+
+Open `SpatialCollaboration.xcodeproj` in Xcode. Run `SpatialCollaboration` on iPhone and `SpatialCollaborationVision` on Apple Vision Pro.
+
+```sh
+SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')
+VISION_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("xrOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple Vision Pro" }.fetch("udid")')
+xcodebuild test -project SpatialCollaboration.xcodeproj -scheme SpatialCollaboration -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
+xcodebuild build -project SpatialCollaboration.xcodeproj -scheme SpatialCollaborationVision -destination "platform=visionOS Simulator,id=$VISION_SIMULATOR_ID,arch=arm64"
 ```

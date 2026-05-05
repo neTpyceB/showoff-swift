@@ -2,67 +2,264 @@ name: CI
 
 on:
   push:
-  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
 
 jobs:
-  test:
+  changes:
+    runs-on: ubuntu-24.04
+    outputs:
+      daily-notes: ${{ steps.filter.outputs.daily-notes }}
+      habit-tracker: ${{ steps.filter.outputs.habit-tracker }}
+      weather-companion: ${{ steps.filter.outputs.weather-companion }}
+      movie-series-browser: ${{ steps.filter.outputs.movie-series-browser }}
+      fitness-dashboard: ${{ steps.filter.outputs.fitness-dashboard }}
+      smart-home-control: ${{ steps.filter.outputs.smart-home-control }}
+      field-service-app: ${{ steps.filter.outputs.field-service-app }}
+      streaming-media-platform: ${{ steps.filter.outputs.streaming-media-platform }}
+      spatial-collaboration: ${{ steps.filter.outputs.spatial-collaboration }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: dorny/paths-filter@v3
+        id: filter
+        with:
+          filters: |
+            daily-notes:
+              - '.github/workflows/ci.yml'
+              - 'DailyNotes.xcodeproj/**'
+              - 'DailyNotes/**'
+              - 'DailyNotesTests/**'
+              - 'DailyNotesUITests/**'
+            habit-tracker:
+              - '.github/workflows/ci.yml'
+              - 'HabitTracker.xcodeproj/**'
+              - 'HabitTracker/**'
+              - 'HabitTrackerShared/**'
+              - 'HabitTrackerWatch/**'
+              - 'HabitTrackerTests/**'
+              - 'HabitTrackerUITests/**'
+            weather-companion:
+              - '.github/workflows/ci.yml'
+              - 'WeatherCompanion.xcodeproj/**'
+              - 'WeatherCompanion/**'
+              - 'WeatherCompanionShared/**'
+              - 'WeatherCompanionWatch/**'
+              - 'WeatherCompanionWidget/**'
+              - 'WeatherCompanionTests/**'
+              - 'WeatherCompanionUITests/**'
+            movie-series-browser:
+              - '.github/workflows/ci.yml'
+              - 'MovieSeriesBrowser.xcodeproj/**'
+              - 'MovieSeriesBrowser/**'
+              - 'MovieSeriesBrowserShared/**'
+              - 'MovieSeriesBrowserTV/**'
+              - 'MovieSeriesBrowserTests/**'
+              - 'MovieSeriesBrowserUITests/**'
+            fitness-dashboard:
+              - '.github/workflows/ci.yml'
+              - 'FitnessDashboard.xcodeproj/**'
+              - 'FitnessDashboard/**'
+              - 'FitnessDashboardShared/**'
+              - 'FitnessDashboardWatch/**'
+              - 'FitnessDashboardTests/**'
+              - 'FitnessDashboardUITests/**'
+            smart-home-control:
+              - '.github/workflows/ci.yml'
+              - 'SmartHomeControl.xcodeproj/**'
+              - 'SmartHomeControl/**'
+              - 'SmartHomeControlShared/**'
+              - 'SmartHomeControlWatch/**'
+              - 'SmartHomeControlTV/**'
+              - 'SmartHomeControlTests/**'
+              - 'SmartHomeControlUITests/**'
+            field-service-app:
+              - '.github/workflows/ci.yml'
+              - 'FieldServiceApp.xcodeproj/**'
+              - 'FieldServiceApp/**'
+              - 'FieldServiceAppShared/**'
+              - 'FieldServiceAppWatch/**'
+              - 'FieldServiceAppTests/**'
+              - 'FieldServiceAppUITests/**'
+            streaming-media-platform:
+              - '.github/workflows/ci.yml'
+              - 'StreamingMediaPlatform.xcodeproj/**'
+              - 'StreamingMediaPlatform/**'
+              - 'StreamingMediaPlatformShared/**'
+              - 'StreamingMediaPlatformWatch/**'
+              - 'StreamingMediaPlatformTV/**'
+              - 'StreamingMediaPlatformTests/**'
+              - 'StreamingMediaPlatformUITests/**'
+            spatial-collaboration:
+              - '.github/workflows/ci.yml'
+              - 'SpatialCollaboration.xcodeproj/**'
+              - 'SpatialCollaboration/**'
+              - 'SpatialCollaborationShared/**'
+              - 'SpatialCollaborationVision/**'
+              - 'SpatialCollaborationTests/**'
+              - 'SpatialCollaborationUITests/**'
+
+  daily-notes:
+    needs: changes
+    if: needs.changes.outputs.daily-notes == 'true'
     runs-on: macos-26
-    timeout-minutes: 30
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+      - name: Select Simulator
+        run: echo "SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')" >> "$GITHUB_ENV"
+      - name: Test Daily Notes
+        run: xcodebuild test -project DailyNotes.xcodeproj -scheme DailyNotes -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
+
+  habit-tracker:
+    needs: changes
+    if: needs.changes.outputs.habit-tracker == 'true'
+    runs-on: macos-26
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v5
       - name: Select Xcode
         run: sudo xcode-select -s /Applications/Xcode.app
       - name: Select Simulators
         run: |
-          SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')
-          WATCH_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("watchOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple Watch Series 11 (46mm)" }.fetch("udid")')
-          TV_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("tvOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple TV 4K (3rd generation)" }.fetch("udid")')
-          echo "SIMULATOR_ID=$SIMULATOR_ID" >> "$GITHUB_ENV"
-          echo "WATCH_SIMULATOR_ID=$WATCH_SIMULATOR_ID" >> "$GITHUB_ENV"
-          echo "TV_SIMULATOR_ID=$TV_SIMULATOR_ID" >> "$GITHUB_ENV"
-      - name: Boot Simulator
-        run: |
-          xcrun simctl boot "$SIMULATOR_ID" 2>/dev/null || true
-          xcrun simctl bootstatus "$SIMULATOR_ID" -b
-      - name: Build Daily Notes
-        run: xcodebuild build -project DailyNotes.xcodeproj -scheme DailyNotes -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64"
-      - name: Test Daily Notes
-        run: xcodebuild test -project DailyNotes.xcodeproj -scheme DailyNotes -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
-      - name: Build Habit Tracker
-        run: xcodebuild build -project HabitTracker.xcodeproj -scheme HabitTracker -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64"
+          echo "SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')" >> "$GITHUB_ENV"
+          echo "WATCH_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("watchOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple Watch Series 11 (46mm)" }.fetch("udid")')" >> "$GITHUB_ENV"
       - name: Test Habit Tracker
         run: xcodebuild test -project HabitTracker.xcodeproj -scheme HabitTracker -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
       - name: Build Habit Tracker Watch
         run: xcodebuild build -project HabitTracker.xcodeproj -scheme HabitTrackerWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"
-      - name: Build Weather Companion
-        run: xcodebuild build -project WeatherCompanion.xcodeproj -scheme WeatherCompanion -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64"
+
+  weather-companion:
+    needs: changes
+    if: needs.changes.outputs.weather-companion == 'true'
+    runs-on: macos-26
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+      - name: Select Simulators
+        run: |
+          echo "SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')" >> "$GITHUB_ENV"
+          echo "WATCH_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("watchOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple Watch Series 11 (46mm)" }.fetch("udid")')" >> "$GITHUB_ENV"
       - name: Test Weather Companion
         run: xcodebuild test -project WeatherCompanion.xcodeproj -scheme WeatherCompanion -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
       - name: Build Weather Companion Watch
         run: xcodebuild build -project WeatherCompanion.xcodeproj -scheme WeatherCompanionWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"
-      - name: Build Movie Series Browser
-        run: xcodebuild build -project MovieSeriesBrowser.xcodeproj -scheme MovieSeriesBrowser -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64"
+
+  movie-series-browser:
+    needs: changes
+    if: needs.changes.outputs.movie-series-browser == 'true'
+    runs-on: macos-26
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+      - name: Select Simulators
+        run: |
+          echo "SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')" >> "$GITHUB_ENV"
+          echo "TV_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("tvOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple TV 4K (3rd generation)" }.fetch("udid")')" >> "$GITHUB_ENV"
       - name: Test Movie Series Browser
         run: xcodebuild test -project MovieSeriesBrowser.xcodeproj -scheme MovieSeriesBrowser -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
       - name: Build Movie Series Browser TV
         run: xcodebuild build -project MovieSeriesBrowser.xcodeproj -scheme MovieSeriesBrowserTV -destination "platform=tvOS Simulator,id=$TV_SIMULATOR_ID,arch=arm64"
-      - name: Build Fitness Dashboard
-        run: xcodebuild build -project FitnessDashboard.xcodeproj -scheme FitnessDashboard -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64"
+
+  fitness-dashboard:
+    needs: changes
+    if: needs.changes.outputs.fitness-dashboard == 'true'
+    runs-on: macos-26
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+      - name: Select Simulators
+        run: |
+          echo "SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')" >> "$GITHUB_ENV"
+          echo "WATCH_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("watchOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple Watch Series 11 (46mm)" }.fetch("udid")')" >> "$GITHUB_ENV"
       - name: Test Fitness Dashboard
         run: xcodebuild test -project FitnessDashboard.xcodeproj -scheme FitnessDashboard -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
       - name: Build Fitness Dashboard Watch
         run: xcodebuild build -project FitnessDashboard.xcodeproj -scheme FitnessDashboardWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"
-      - name: Build Smart Home Control
-        run: xcodebuild build -project SmartHomeControl.xcodeproj -scheme SmartHomeControl -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64"
+
+  smart-home-control:
+    needs: changes
+    if: needs.changes.outputs.smart-home-control == 'true'
+    runs-on: macos-26
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+      - name: Select Simulators
+        run: |
+          echo "SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')" >> "$GITHUB_ENV"
+          echo "WATCH_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("watchOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple Watch Series 11 (46mm)" }.fetch("udid")')" >> "$GITHUB_ENV"
+          echo "TV_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("tvOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple TV 4K (3rd generation)" }.fetch("udid")')" >> "$GITHUB_ENV"
       - name: Test Smart Home Control
         run: xcodebuild test -project SmartHomeControl.xcodeproj -scheme SmartHomeControl -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
       - name: Build Smart Home Control Watch
         run: xcodebuild build -project SmartHomeControl.xcodeproj -scheme SmartHomeControlWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"
       - name: Build Smart Home Control TV
         run: xcodebuild build -project SmartHomeControl.xcodeproj -scheme SmartHomeControlTV -destination "platform=tvOS Simulator,id=$TV_SIMULATOR_ID,arch=arm64"
-      - name: Build Field Service App
-        run: xcodebuild build -project FieldServiceApp.xcodeproj -scheme FieldServiceApp -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64"
+
+  field-service-app:
+    needs: changes
+    if: needs.changes.outputs.field-service-app == 'true'
+    runs-on: macos-26
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+      - name: Select Simulators
+        run: |
+          echo "SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')" >> "$GITHUB_ENV"
+          echo "WATCH_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("watchOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple Watch Series 11 (46mm)" }.fetch("udid")')" >> "$GITHUB_ENV"
       - name: Test Field Service App
         run: xcodebuild test -project FieldServiceApp.xcodeproj -scheme FieldServiceApp -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
       - name: Build Field Service App Watch
         run: xcodebuild build -project FieldServiceApp.xcodeproj -scheme FieldServiceAppWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"
+
+  streaming-media-platform:
+    needs: changes
+    if: needs.changes.outputs.streaming-media-platform == 'true'
+    runs-on: macos-26
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+      - name: Select Simulators
+        run: |
+          echo "SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')" >> "$GITHUB_ENV"
+          echo "WATCH_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("watchOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple Watch Series 11 (46mm)" }.fetch("udid")')" >> "$GITHUB_ENV"
+          echo "TV_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("tvOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple TV 4K (3rd generation)" }.fetch("udid")')" >> "$GITHUB_ENV"
+      - name: Test Streaming Media Platform
+        run: xcodebuild test -project StreamingMediaPlatform.xcodeproj -scheme StreamingMediaPlatform -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
+      - name: Build Streaming Media Platform Watch
+        run: xcodebuild build -project StreamingMediaPlatform.xcodeproj -scheme StreamingMediaPlatformWatch -destination "platform=watchOS Simulator,id=$WATCH_SIMULATOR_ID,arch=arm64"
+      - name: Build Streaming Media Platform TV
+        run: xcodebuild build -project StreamingMediaPlatform.xcodeproj -scheme StreamingMediaPlatformTV -destination "platform=tvOS Simulator,id=$TV_SIMULATOR_ID,arch=arm64"
+
+  spatial-collaboration:
+    needs: changes
+    if: needs.changes.outputs.spatial-collaboration == 'true'
+    runs-on: macos-26
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
+      - name: Select Simulators
+        run: |
+          echo "SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("iOS-26-4") }.last; puts devices.find { |device| device["name"] == "iPhone 17" }.fetch("udid")')" >> "$GITHUB_ENV"
+          echo "VISION_SIMULATOR_ID=$(xcrun simctl list devices available -j | ruby -rjson -e 'devices = JSON.parse(STDIN.read)["devices"].find { |runtime, _| runtime.end_with?("xrOS-26-4") }.last; puts devices.find { |device| device["name"] == "Apple Vision Pro" }.fetch("udid")')" >> "$GITHUB_ENV"
+      - name: Test Spatial Collaboration
+        run: xcodebuild test -project SpatialCollaboration.xcodeproj -scheme SpatialCollaboration -destination "platform=iOS Simulator,id=$SIMULATOR_ID,arch=arm64" -parallel-testing-enabled NO
+      - name: Build Spatial Collaboration Vision
+        run: xcodebuild build -project SpatialCollaboration.xcodeproj -scheme SpatialCollaborationVision -destination "platform=visionOS Simulator,id=$VISION_SIMULATOR_ID,arch=arm64"
